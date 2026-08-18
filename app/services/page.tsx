@@ -4,106 +4,109 @@ export default function Services() {
       <h1>Services</h1>
 
       <section>
-        <h2>EU Ai Act Compliance Audit</h2>
-        <p><strong>Duration:</strong> 2–4 weeks | <strong>Cost:</strong> $15–50K</p>
+        <h2>Claude Team Setup & Onboarding</h2>
+        <p><strong>Duration:</strong> 2-4 weeks | <strong>Cost:</strong> $15-40K</p>
         <h3>What We Do</h3>
         <ul style={{ marginLeft: '2rem' }}>
-          <li>Inventory your Ai systems (production, experimental, third-party models)</li>
-          <li>Map each system to EU Ai Act risk tiers (prohibited, high-risk, limited-risk, minimal)</li>
-          <li>Identify compliance gaps and regulatory obligations</li>
-          <li>Build a roadmap to full compliance by August 2026</li>
-          <li>Document findings in a compliance audit report</li>
+          <li>Set up Claude team account from scratch with proper governance structure</li>
+          <li>Configure SSO integration (Okta, Azure AD, etc.) for your org</li>
+          <li>Design user roles, permissions, and access controls</li>
+          <li>Set up workspace organization and team structure</li>
+          <li>Establish initial security baseline and audit logging</li>
+          <li>Create onboarding materials for your teams</li>
         </ul>
         <h3>Outcome</h3>
-        <p>A clear picture of where you stand and what needs to happen by Aug 2026. No surprises at the regulator's door.</p>
+        <p>A fully configured Claude team account ready for deployment. Your team knows how to access it, use it, and follow your governance.</p>
       </section>
 
       <section>
-        <h2>Ai Governance Framework</h2>
-        <p><strong>Duration:</strong> 8–12 weeks | <strong>Cost:</strong> $50–200K + retainer</p>
+        <h2>Ai System Architecture Design</h2>
+        <p><strong>Duration:</strong> 3-6 weeks | <strong>Cost:</strong> $25-60K</p>
         <h3>What We Do</h3>
         <ul style={{ marginLeft: '2rem' }}>
-          <li>Design governance structure (roles, decision rights, accountability)</li>
-          <li>Develop AI ethics principles and responsible-use policies</li>
-          <li>Build risk assessment methodology aligned with NIST Ai RMF and ISO 42001</li>
-          <li>Create audit trails and documentation templates</li>
-          <li>Set up continuous monitoring for model drift and performance</li>
-          <li>Train your teams on governance processes and tools</li>
+          <li>Map your business workflows and identify Ai integration points</li>
+          <li>Design secure data pipelines between your systems and Claude</li>
+          <li>Plan API integration, custom endpoints, and automation workflows</li>
+          <li>Define data handling, retention, and security practices</li>
+          <li>Map to compliance requirements (GDPR, Ai Act, sector rules)</li>
+          <li>Document architecture and hand over implementation guide</li>
         </ul>
         <h3>Outcome</h3>
-        <p>A working governance system that scales with your AI operations. Customers and regulators see you as mature.</p>
+        <p>A detailed architecture blueprint that your teams can build from. Secure, scalable, compliant from day one.</p>
       </section>
 
       <section>
-        <h2>High-Risk AI System Assessment</h2>
-        <p><strong>Duration:</strong> 3–6 weeks per system | <strong>Cost:</strong> $25–75K</p>
+        <h2>Claude Governance & Compliance</h2>
+        <p><strong>Duration:</strong> 2-4 weeks | <strong>Cost:</strong> $20-50K</p>
         <h3>What We Do</h3>
         <ul style={{ marginLeft: '2rem' }}>
-          <li>Deep-dive into your flagship AI system: architecture, data, training, deployment</li>
-          <li>Evaluate against high-risk requirements (EU Ai Act, sector regulations)</li>
-          <li>Bias and fairness testing using industry benchmarks</li>
-          <li>Interpretability and explainability review</li>
-          <li>Performance monitoring and drift detection plan</li>
-          <li>Comprehensive risk report and remediation roadmap</li>
+          <li>Audit current Claude usage and identify compliance gaps</li>
+          <li>Map Claude deployments to EU Ai Act, GDPR, and sector regulations</li>
+          <li>Build governance policies (acceptable use, data handling, audit requirements)</li>
+          <li>Set up audit logging and monitoring for Claude usage</li>
+          <li>Document compliance approach for regulators and auditors</li>
+          <li>Create incident response procedures for Ai-related issues</li>
         </ul>
         <h3>Outcome</h3>
-        <p>Detailed risk profile of your highest-impact AI system, with clear actions to improve compliance and reliability.</p>
+        <p>Documented governance framework proving Claude usage is compliant and auditable. Ready for regulatory review.</p>
       </section>
 
       <section>
-        <h2>Third-Party Model Governance</h2>
-        <p><strong>Duration:</strong> 2–4 weeks | <strong>Cost:</strong> $10–30K</p>
+        <h2>Workflow Integration & Automation</h2>
+        <p><strong>Duration:</strong> 4-8 weeks | <strong>Cost:</strong> $30-80K</p>
         <h3>What We Do</h3>
         <ul style={{ marginLeft: '2rem' }}>
-          <li>Catalog all LLMs and fine-tuned models your org uses</li>
-          <li>Risk assessment for each model (data privacy, bias, security, performance)</li>
-          <li>Acceptable-use policy for third-party models</li>
-          <li>Vetting process for new models entering your stack</li>
-          <li>Monitoring setup to catch drift or issues</li>
+          <li>Design and implement API integrations between Claude and your systems</li>
+          <li>Build custom workflows and automation using Claude (through API or UI)</li>
+          <li>Set up data pipelines for document processing, analysis, summarization</li>
+          <li>Create dashboards and monitoring for Claude usage metrics</li>
+          <li>Document workflows and create runbooks for your teams</li>
+          <li>Test and validate integrations end-to-end</li>
         </ul>
         <h3>Outcome</h3>
-        <p>Clear governance for models you don't own. Reduced risk and compliance confidence in your third-party AI stack.</p>
+        <p>Claude embedded into your workflows and systems. Your teams have working integrations and documentation.</p>
       </section>
 
       <section>
-        <h2>Ongoing Governance Support (Retainer)</h2>
-        <p><strong>Frequency:</strong> Monthly | <strong>Cost:</strong> $500–5K/month</p>
+        <h2>Security & Access Control</h2>
+        <p><strong>Duration:</strong> 2-3 weeks | <strong>Cost:</strong> $15-40K</p>
         <h3>What We Do</h3>
         <ul style={{ marginLeft: '2rem' }}>
-          <li>Monthly governance reviews and risk assessments for new Ai systems</li>
-          <li>Regulatory updates and compliance tracking</li>
-          <li>Incident response support for governance issues</li>
-          <li>Team coaching and governance training</li>
-          <li>Quarterly board-level governance reports</li>
+          <li>Implement role-based access control (RBAC) for Claude team account</li>
+          <li>Set up data isolation between teams/projects</li>
+          <li>Configure audit logging for all Claude usage</li>
+          <li>Harden security baseline (password policies, 2FA, IP restrictions)</li>
+          <li>Establish data residency and retention policies</li>
+          <li>Create security runbooks and incident response procedures</li>
         </ul>
         <h3>Outcome</h3>
-        <p>Continuous Ai governance that scales with your business. Your team isn't alone; you have expert support built in.</p>
+        <p>A hardened Claude deployment with auditable security controls. Compliant with enterprise security standards.</p>
       </section>
 
       <section>
-        <h2>Ai Governance Training Workshop</h2>
-        <p><strong>Duration:</strong> 1 day (in-person or virtual) | <strong>Cost:</strong> Custom quote</p>
-        <h3>What We Cover</h3>
+        <h2>Ongoing Implementation Support (Retainer)</h2>
+        <p><strong>Frequency:</strong> Monthly | <strong>Cost:</strong> $2K-8K/month</p>
+        <h3>What We Do</h3>
         <ul style={{ marginLeft: '2rem' }}>
-          <li>Regulatory landscape (EU Ai Act, GDPR, sector-specific rules)</li>
-          <li>NIST AI Risk Management Framework overview</li>
-          <li>ISO 42001 and governance best practices</li>
-          <li>Building governance into your AI development lifecycle</li>
-          <li>Case studies and common failure modes</li>
-          <li>Q&A and custom scenario planning</li>
+          <li>Ongoing support for Claude team account management and optimization</li>
+          <li>New team member onboarding and access provisioning</li>
+          <li>Troubleshooting integration issues and performance problems</li>
+          <li>Monthly scaling assessments as your usage grows</li>
+          <li>Updates to governance and security policies as regulations evolve</li>
+          <li>Quarterly business reviews and optimization recommendations</li>
         </ul>
-        <h3>Audience</h3>
-        <p>Technical teams, product managers, compliance officers, executives responsible for AI deployment.</p>
+        <h3>Outcome</h3>
+        <p>Your Claude deployment stays current, secure, and optimized. You have expert support as you scale.</p>
       </section>
 
       <section style={{ marginTop: '3rem' }}>
         <h2>How We Price</h2>
         <p>
-          We quote based on scope: the size of your AI portfolio, complexity of your systems, and regulatory requirements.
-          Most engagements start with a compliance audit ($15–50K), then scale into ongoing governance support or deeper system assessments.
+          We quote based on scope: the size of your org, complexity of integrations, regulatory requirements, and support level.
+          Most customers start with Claude Team Setup or Ai System Architecture Design, then add integrations and ongoing support as they scale.
         </p>
         <p>
-          <strong>Not sure where to start?</strong> <a href="/contact">Let's talk about your specific situation.</a>
+          <strong>Not sure where to start?</strong> <a href="/contact">Let's talk about your Claude strategy.</a>
         </p>
       </section>
     </>

@@ -1,17 +1,19 @@
+'use client';
+
 export default function Blog() {
   const posts = [
     {
       id: 1,
-      title: "Coming Soon: Thought Leadership on Ai Governance",
+      title: "Coming Soon: Claude Deployment Insights",
       date: "2026-08-18",
-      excerpt: "In-depth research and guidance on building trustworthy AI systems in regulated industries.",
+      excerpt: "Practical guidance on Claude team account configuration, security architecture, and enterprise scaling.",
     },
   ];
 
   return (
     <>
       <h1>Insights</h1>
-      <p>Research, frameworks, and practical guidance on AI governance for enterprises.</p>
+      <p>Research, frameworks, and practical guidance on Claude deployment and Ai system architecture for enterprise.</p>
 
       <div className="blog-list">
         {posts.map((post) => (
@@ -27,16 +29,16 @@ export default function Blog() {
       <section style={{ marginTop: '3rem', padding: '2rem', backgroundColor: 'white', borderRadius: '8px', border: '1px solid #e0e0e0' }}>
         <h2>Upcoming Topics</h2>
         <ul style={{ marginLeft: '2rem' }}>
-          <li>The August 2026 EU AI Act Compliance Panic: What Your Exec Team Should Do Now</li>
-          <li>Stop Building AI Without Governance: A Practical Framework for Enterprise Leaders</li>
-          <li>The Ai Governance Maturity Curve: Where Most Enterprises Fail (And How to Fix It)</li>
-          <li>Agentic AI and Governance: Why Traditional Risk Frameworks Aren't Enough</li>
+          <li>Claude Team Account Setup: Best Practices for Enterprise Deployment</li>
+          <li>Secure Claude Integration: Data Handling, Compliance, and Architecture Patterns</li>
+          <li>Scaling Claude Across Your Organization: Governance, Access Control, and Cost Optimization</li>
+          <li>Claude + Your Systems: API Integration, Workflow Automation, and Real-World Use Cases</li>
         </ul>
         <p style={{ marginTop: '1.5rem' }}>Subscribe below to get notified when new articles are published.</p>
       </section>
 
       <section style={{ marginTop: '2rem', maxWidth: '400px' }}>
-        <h3>Get Ai Governance Insights</h3>
+        <h3>Get Claude Deployment Insights</h3>
         <form>
           <input type="email" placeholder="your@email.com" required />
           <button type="submit">Subscribe</button>

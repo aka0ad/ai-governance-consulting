@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Ai Governance Consulting | Building Trustworthy Ai Systems',
-  description: 'B2B Ai governance consulting for regulated enterprises. Compliance frameworks, risk management, and responsible Ai deployment.',
+  title: 'Claude Team Implementation | Ai System Architecture for Enterprise',
+  description: 'Enterprise Claude team account setup, integration, and scaling. Security, compliance, and architecture for organizations deploying Claude at scale.',
 };
 
 export default function RootLayout({

@@ -2,19 +2,19 @@ export default function Home() {
   return (
     <>
       <section className="hero">
-        <h1>Ai Governance for Regulated Enterprises</h1>
-        <p>Build trustworthy Ai systems with compliance frameworks that actually work.</p>
+        <h1>Claude Team Account Configuration & Implementation</h1>
+        <p>Enterprise Ai system setup, security architecture, and scaling for teams using Claude.</p>
         <a href="/contact" className="cta-button">Get Started</a>
       </section>
 
       <section>
         <h2>The Problem</h2>
         <p>
-          You're deploying AI. Your regulators are asking questions. Your teams are building Ai systems without central oversight.
-          You don't know where your AI lives, what risks it carries, or how to prove compliance.
+          You have a Claude team account and want to maximize it across your organization. But you're unsure how to set it up securely,
+          integrate it into workflows, configure governance, ensure compliance, and scale it across teams.
         </p>
         <p>
-          The EU Ai Act deadline is August 2026. Regulators globally are ramping up scrutiny. You need a governance framework that works.
+          You need an implementation partner who understands Claude, your security requirements, and your regulatory environment.
         </p>
       </section>
 
@@ -22,39 +22,39 @@ export default function Home() {
         <h2>What We Do</h2>
         <div className="services-grid">
           <div className="service-card">
-            <h3>EU Ai Act Compliance Audit</h3>
-            <p>Map your Ai systems to regulatory risk tiers. Identify gaps. Build a roadmap to August 2026 compliance.</p>
-            <p><strong>Engagement:</strong> $15–50K</p>
+            <h3>Claude Team Setup & Onboarding</h3>
+            <p>Configure Claude team accounts from the ground up. SSO integration, user management, workspace setup, security baseline.</p>
+            <p><strong>Engagement:</strong> $15-40K</p>
           </div>
 
           <div className="service-card">
-            <h3>Ai Governance Framework</h3>
-            <p>Design and implement NIST/ISO-aligned governance. Policies, roles, risk assessment, continuous monitoring.</p>
-            <p><strong>Engagement:</strong> $50–200K + retainer</p>
+            <h3>Ai System Architecture Design</h3>
+            <p>Design secure, scalable Ai system architecture for your org. Workflow integration, data handling, compliance mapping.</p>
+            <p><strong>Engagement:</strong> $25-60K</p>
           </div>
 
           <div className="service-card">
-            <h3>High-Risk AI Assessment</h3>
-            <p>Deep-dive risk analysis on your flagship Ai systems. Bias testing, compliance review, remediation roadmap.</p>
-            <p><strong>Engagement:</strong> $25–75K per system</p>
+            <h3>Claude Governance & Compliance</h3>
+            <p>Map Claude usage to regulatory requirements (EU Ai Act, GDPR, sector rules). Build governance policies and audit trails.</p>
+            <p><strong>Engagement:</strong> $20-50K</p>
           </div>
 
           <div className="service-card">
-            <h3>Third-Party Model Governance</h3>
-            <p>Evaluate LLMs and fine-tuned models your team uses. Risk assessment, acceptable-use policy, monitoring setup.</p>
-            <p><strong>Engagement:</strong> $10–30K</p>
+            <h3>Workflow Integration & Automation</h3>
+            <p>Embed Claude into your existing systems (APIs, dashboards, data pipelines). Custom integrations and automation setup.</p>
+            <p><strong>Engagement:</strong> $30-80K</p>
           </div>
 
           <div className="service-card">
-            <h3>Ongoing Governance Support</h3>
-            <p>Monthly retainer for continuous Ai governance. New system reviews, regulatory updates, team coaching.</p>
-            <p><strong>Engagement:</strong> $500–5K/month</p>
+            <h3>Security & Access Control</h3>
+            <p>Implement role-based access, data isolation, audit logging, and security hardening for Claude deployments.</p>
+            <p><strong>Engagement:</strong> $15-40K</p>
           </div>
 
           <div className="service-card">
-            <h3>Ai Governance Training</h3>
-            <p>Workshop your teams on governance frameworks, compliance obligations, responsible AI practices.</p>
-            <p><strong>Engagement:</strong> Custom quote</p>
+            <h3>Ongoing Implementation Support</h3>
+            <p>Monthly retainer for deployment guidance, team onboarding, troubleshooting, and scaling as you grow.</p>
+            <p><strong>Engagement:</strong> $2K-8K/month</p>
           </div>
         </div>
       </section>
@@ -62,28 +62,28 @@ export default function Home() {
       <section>
         <h2>Why This Matters</h2>
         <ul style={{ marginLeft: '2rem' }}>
-          <li><strong>Regulatory pressure is real.</strong> EU Ai Act enforcement starts Aug 2, 2026. Fines: €35M or 7% annual revenue.</li>
-          <li><strong>Ungoverned AI is expensive.</strong> Bias in production, compliance violations, liability exposure.</li>
-          <li><strong>Customers demand proof.</strong> Regulated industries need vendors with governance frameworks in place.</li>
-          <li><strong>This is urgent.</strong> Most enterprises are unprepared. You have ~12 months to build compliance.</li>
+          <li><strong>Getting it right saves months.</strong> Misconfigured Claude deployments waste time and money. Proper setup unlocks value immediately.</li>
+          <li><strong>Compliance and security aren't afterthoughts.</strong> Data handling, audit trails, and regulatory mapping need to be built in from day one.</li>
+          <li><strong>Scale requires architecture.</strong> Ad-hoc Claude usage across teams creates chaos. A foundation lets you scale confidently.</li>
+          <li><strong>Your team needs guidance.</strong> Onboarding Claude requires training and governance. We do that work so you don't have to.</li>
         </ul>
       </section>
 
       <section>
         <h2>Our Approach</h2>
         <p>
-          We don't hand you a 100-page framework and disappear. We work embedded with your teams to build governance
-          that fits your business. Practical, measurable, aligned with regulatory requirements.
+          We've configured Claude deployments across regulated enterprises, startups, and teams of all sizes.
+          We understand Claude's capabilities, limitations, and how it integrates into real workflows.
         </p>
         <p>
-          We use NIST AI RMF, ISO 42001, and sector-specific regulations as the foundation. We translate regulatory
-          language into operational policies your teams can actually follow.
+          We work embedded with your teams to design, build, and hand off Claude implementations that are secure, compliant, and scalable.
+          No theorizing—just practical, proven architecture.
         </p>
       </section>
 
       <section style={{ textAlign: 'center', margin: '3rem 0' }}>
-        <h2>Ready to Build Trustworthy AI?</h2>
-        <p>Let's talk about your Ai governance challenges.</p>
+        <h2>Ready to Deploy Claude at Scale?</h2>
+        <p>Let's talk about your Claude team account strategy.</p>
         <a href="/contact" className="cta-button">Schedule a Consultation</a>
       </section>
     </>

@@ -12,23 +12,23 @@ export default function Contact() {
 
     // Reset form
     e.currentTarget.reset();
-    alert('Thank you for reaching out. We'll be in touch soon.');
+    alert('Thank you for reaching out. We\'ll be in touch soon.');
   };
 
   return (
     <>
       <h1>Get Started</h1>
-      <p>Let's discuss your Ai governance challenges and opportunities.</p>
+      <p>Let's discuss your Claude team account strategy and Ai system configuration needs.</p>
 
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', marginTop: '2rem' }}>
         <div>
           <h2>Schedule a Consultation</h2>
           <p>
-            Typical engagement path: 30-minute intro call → compliance audit → governance framework.
-            Most enterprises start with an audit to understand where they stand.
+            Typical engagement path: 30-minute intro call to understand your setup, then architecture review and implementation plan.
+            Most teams start with a setup or architecture engagement.
           </p>
           <p>
-            <strong>Response time:</strong> 24–48 hours
+            <strong>Response time:</strong> 24-48 hours
           </p>
 
           <form onSubmit={handleSubmit}>
@@ -68,7 +68,7 @@ export default function Contact() {
                 type="text"
                 id="role"
                 name="role"
-                placeholder="e.g., Chief Ai Officer, VP Product"
+                placeholder="e.g., CTO, VP Engineering, Head of Operations"
                 required
               />
             </div>
@@ -82,17 +82,19 @@ export default function Contact() {
                 <option value="manufacturing">Manufacturing</option>
                 <option value="energy">Energy</option>
                 <option value="tech">Technology</option>
+                <option value="legal">Legal</option>
+                <option value="consulting">Consulting</option>
                 <option value="other">Other</option>
               </select>
             </div>
 
             <div>
-              <label htmlFor="challenge">What's your biggest Ai governance challenge? *</label>
+              <label htmlFor="challenge">What's your Claude team account need? *</label>
               <textarea
                 id="challenge"
                 name="challenge"
                 rows={4}
-                placeholder="e.g., We have no AI inventory, we're not ready for EU Ai Act, we need risk management..."
+                placeholder="e.g., We have a Claude team account and need help setting it up, integrating with our systems, scaling across teams, or ensuring compliance..."
                 required
               />
             </div>
@@ -101,9 +103,9 @@ export default function Contact() {
               <label htmlFor="timeline">Timeline *</label>
               <select id="timeline" name="timeline" required>
                 <option value="">Select a timeline</option>
-                <option value="urgent">Urgent (next 3 months)</option>
-                <option value="soon">Soon (3–6 months)</option>
-                <option value="planned">Planned (6+ months)</option>
+                <option value="urgent">Urgent (next month)</option>
+                <option value="soon">Soon (1-3 months)</option>
+                <option value="planned">Planned (3+ months)</option>
               </select>
             </div>
 
@@ -115,24 +117,24 @@ export default function Contact() {
           <h2>What Happens Next</h2>
           <div style={{ backgroundColor: '#f5f5f5', padding: '1.5rem', borderRadius: '8px', marginTop: '1rem' }}>
             <h3 style={{ marginTop: 0 }}>Step 1: Intro Call (30 min)</h3>
-            <p>We'll discuss your situation, regulatory environment, and specific challenges. No pressure—just conversation.</p>
+            <p>We'll discuss your org, Claude team account status, and specific needs. No pressure, just conversation.</p>
 
-            <h3>Step 2: Compliance Audit Proposal</h3>
-            <p>Based on the call, we'll scope a compliance audit. You'll get a clear proposal with timeline and cost.</p>
+            <h3>Step 2: Proposal</h3>
+            <p>Based on the call, we'll outline an approach and timeline. You'll get a clear scope and cost estimate.</p>
 
-            <h3>Step 3: Audit & Roadmap</h3>
-            <p>We inventory your AI systems, map to regulations, and build a roadmap to compliance and governance.</p>
+            <h3>Step 3: Implementation</h3>
+            <p>We work embedded with your team to design, build, and deploy Claude at scale for your org.</p>
 
-            <h3>Step 4: Implementation</h3>
-            <p>Decide to move forward with governance framework, ongoing support, or deeper system assessments.</p>
+            <h3>Step 4: Handoff & Support</h3>
+            <p>Your team takes over. We offer ongoing retainer support for scaling, optimization, and new team onboarding.</p>
           </div>
 
           <h2 style={{ marginTop: '2rem' }}>Quick Facts</h2>
           <ul style={{ marginLeft: '2rem' }}>
-            <li><strong>Typical audit duration:</strong> 2–4 weeks</li>
-            <li><strong>Audit cost range:</strong> $15–50K (depends on AI portfolio size)</li>
-            <li><strong>We serve:</strong> Enterprise & regulated small businesses</li>
-            <li><strong>Expertise:</strong> NIST AI RMF, ISO 42001, EU Ai Act, sector regulations</li>
+            <li><strong>Typical project duration:</strong> 2-8 weeks depending on scope</li>
+            <li><strong>Cost range:</strong> $15K-80K+ per engagement (depends on complexity)</li>
+            <li><strong>We serve:</strong> Enterprises, regulated orgs, and growing teams</li>
+            <li><strong>Expertise:</strong> Claude architecture, security, compliance, integration</li>
           </ul>
         </div>
       </div>
