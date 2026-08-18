@@ -4,12 +4,12 @@ export default function Services() {
       <h1>Services</h1>
 
       <section>
-        <h2>EU AI Act Compliance Audit</h2>
+        <h2>EU Ai Act Compliance Audit</h2>
         <p><strong>Duration:</strong> 2–4 weeks | <strong>Cost:</strong> $15–50K</p>
         <h3>What We Do</h3>
         <ul style={{ marginLeft: '2rem' }}>
-          <li>Inventory your AI systems (production, experimental, third-party models)</li>
-          <li>Map each system to EU AI Act risk tiers (prohibited, high-risk, limited-risk, minimal)</li>
+          <li>Inventory your Ai systems (production, experimental, third-party models)</li>
+          <li>Map each system to EU Ai Act risk tiers (prohibited, high-risk, limited-risk, minimal)</li>
           <li>Identify compliance gaps and regulatory obligations</li>
           <li>Build a roadmap to full compliance by August 2026</li>
           <li>Document findings in a compliance audit report</li>
@@ -19,13 +19,13 @@ export default function Services() {
       </section>
 
       <section>
-        <h2>AI Governance Framework</h2>
+        <h2>Ai Governance Framework</h2>
         <p><strong>Duration:</strong> 8–12 weeks | <strong>Cost:</strong> $50–200K + retainer</p>
         <h3>What We Do</h3>
         <ul style={{ marginLeft: '2rem' }}>
           <li>Design governance structure (roles, decision rights, accountability)</li>
           <li>Develop AI ethics principles and responsible-use policies</li>
-          <li>Build risk assessment methodology aligned with NIST AI RMF and ISO 42001</li>
+          <li>Build risk assessment methodology aligned with NIST Ai RMF and ISO 42001</li>
           <li>Create audit trails and documentation templates</li>
           <li>Set up continuous monitoring for model drift and performance</li>
           <li>Train your teams on governance processes and tools</li>
@@ -40,7 +40,7 @@ export default function Services() {
         <h3>What We Do</h3>
         <ul style={{ marginLeft: '2rem' }}>
           <li>Deep-dive into your flagship AI system: architecture, data, training, deployment</li>
-          <li>Evaluate against high-risk requirements (EU AI Act, sector regulations)</li>
+          <li>Evaluate against high-risk requirements (EU Ai Act, sector regulations)</li>
           <li>Bias and fairness testing using industry benchmarks</li>
           <li>Interpretability and explainability review</li>
           <li>Performance monitoring and drift detection plan</li>
@@ -70,22 +70,22 @@ export default function Services() {
         <p><strong>Frequency:</strong> Monthly | <strong>Cost:</strong> $500–5K/month</p>
         <h3>What We Do</h3>
         <ul style={{ marginLeft: '2rem' }}>
-          <li>Monthly governance reviews and risk assessments for new AI systems</li>
+          <li>Monthly governance reviews and risk assessments for new Ai systems</li>
           <li>Regulatory updates and compliance tracking</li>
           <li>Incident response support for governance issues</li>
           <li>Team coaching and governance training</li>
           <li>Quarterly board-level governance reports</li>
         </ul>
         <h3>Outcome</h3>
-        <p>Continuous AI governance that scales with your business. Your team isn't alone; you have expert support built in.</p>
+        <p>Continuous Ai governance that scales with your business. Your team isn't alone; you have expert support built in.</p>
       </section>
 
       <section>
-        <h2>AI Governance Training Workshop</h2>
+        <h2>Ai Governance Training Workshop</h2>
         <p><strong>Duration:</strong> 1 day (in-person or virtual) | <strong>Cost:</strong> Custom quote</p>
         <h3>What We Cover</h3>
         <ul style={{ marginLeft: '2rem' }}>
-          <li>Regulatory landscape (EU AI Act, GDPR, sector-specific rules)</li>
+          <li>Regulatory landscape (EU Ai Act, GDPR, sector-specific rules)</li>
           <li>NIST AI Risk Management Framework overview</li>
           <li>ISO 42001 and governance best practices</li>
           <li>Building governance into your AI development lifecycle</li>

@@ -2,19 +2,19 @@ export default function Home() {
   return (
     <>
       <section className="hero">
-        <h1>AI Governance for Regulated Enterprises</h1>
-        <p>Build trustworthy AI systems with compliance frameworks that actually work.</p>
+        <h1>Ai Governance for Regulated Enterprises</h1>
+        <p>Build trustworthy Ai systems with compliance frameworks that actually work.</p>
         <a href="/contact" className="cta-button">Get Started</a>
       </section>
 
       <section>
         <h2>The Problem</h2>
         <p>
-          You're deploying AI. Your regulators are asking questions. Your teams are building AI systems without central oversight.
+          You're deploying AI. Your regulators are asking questions. Your teams are building Ai systems without central oversight.
           You don't know where your AI lives, what risks it carries, or how to prove compliance.
         </p>
         <p>
-          The EU AI Act deadline is August 2026. Regulators globally are ramping up scrutiny. You need a governance framework that works.
+          The EU Ai Act deadline is August 2026. Regulators globally are ramping up scrutiny. You need a governance framework that works.
         </p>
       </section>
 
@@ -22,20 +22,20 @@ export default function Home() {
         <h2>What We Do</h2>
         <div className="services-grid">
           <div className="service-card">
-            <h3>EU AI Act Compliance Audit</h3>
-            <p>Map your AI systems to regulatory risk tiers. Identify gaps. Build a roadmap to August 2026 compliance.</p>
+            <h3>EU Ai Act Compliance Audit</h3>
+            <p>Map your Ai systems to regulatory risk tiers. Identify gaps. Build a roadmap to August 2026 compliance.</p>
             <p><strong>Engagement:</strong> $15–50K</p>
           </div>
 
           <div className="service-card">
-            <h3>AI Governance Framework</h3>
+            <h3>Ai Governance Framework</h3>
             <p>Design and implement NIST/ISO-aligned governance. Policies, roles, risk assessment, continuous monitoring.</p>
             <p><strong>Engagement:</strong> $50–200K + retainer</p>
           </div>
 
           <div className="service-card">
             <h3>High-Risk AI Assessment</h3>
-            <p>Deep-dive risk analysis on your flagship AI systems. Bias testing, compliance review, remediation roadmap.</p>
+            <p>Deep-dive risk analysis on your flagship Ai systems. Bias testing, compliance review, remediation roadmap.</p>
             <p><strong>Engagement:</strong> $25–75K per system</p>
           </div>
 
@@ -47,12 +47,12 @@ export default function Home() {
 
           <div className="service-card">
             <h3>Ongoing Governance Support</h3>
-            <p>Monthly retainer for continuous AI governance. New system reviews, regulatory updates, team coaching.</p>
+            <p>Monthly retainer for continuous Ai governance. New system reviews, regulatory updates, team coaching.</p>
             <p><strong>Engagement:</strong> $500–5K/month</p>
           </div>
 
           <div className="service-card">
-            <h3>AI Governance Training</h3>
+            <h3>Ai Governance Training</h3>
             <p>Workshop your teams on governance frameworks, compliance obligations, responsible AI practices.</p>
             <p><strong>Engagement:</strong> Custom quote</p>
           </div>
@@ -62,7 +62,7 @@ export default function Home() {
       <section>
         <h2>Why This Matters</h2>
         <ul style={{ marginLeft: '2rem' }}>
-          <li><strong>Regulatory pressure is real.</strong> EU AI Act enforcement starts Aug 2, 2026. Fines: €35M or 7% annual revenue.</li>
+          <li><strong>Regulatory pressure is real.</strong> EU Ai Act enforcement starts Aug 2, 2026. Fines: €35M or 7% annual revenue.</li>
           <li><strong>Ungoverned AI is expensive.</strong> Bias in production, compliance violations, liability exposure.</li>
           <li><strong>Customers demand proof.</strong> Regulated industries need vendors with governance frameworks in place.</li>
           <li><strong>This is urgent.</strong> Most enterprises are unprepared. You have ~12 months to build compliance.</li>
@@ -83,7 +83,7 @@ export default function Home() {
 
       <section style={{ textAlign: 'center', margin: '3rem 0' }}>
         <h2>Ready to Build Trustworthy AI?</h2>
-        <p>Let's talk about your AI governance challenges.</p>
+        <p>Let's talk about your Ai governance challenges.</p>
         <a href="/contact" className="cta-button">Schedule a Consultation</a>
       </section>
     </>

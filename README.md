@@ -1,4 +1,4 @@
-# AI Governance Consulting Website
+# Ai Governance Consulting Website
 
 B2B consulting website for AI governance, compliance frameworks, and responsible AI deployment for regulated enterprises.
 

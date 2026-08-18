@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'AI Governance Consulting | Building Trustworthy AI Systems',
-  description: 'B2B AI governance consulting for regulated enterprises. Compliance frameworks, risk management, and responsible AI deployment.',
+  title: 'Ai Governance Consulting | Building Trustworthy Ai Systems',
+  description: 'B2B Ai governance consulting for regulated enterprises. Compliance frameworks, risk management, and responsible Ai deployment.',
 };
 
 export default function RootLayout({

@@ -2,6 +2,16 @@
 
 This is a Next.js static site configured for Cloudflare Pages deployment via GitHub.
 
+## Configure Build Settings in Cloudflare
+
+When connecting to Cloudflare Pages, override the auto-detected settings:
+
+- **Build command:** `npm run build`
+- **Build output directory:** `out`
+- **Framework preset:** Next.js
+
+The site is static (not dynamic), so don't use opennextjs-cloudflare adapter.
+
 ## Prerequisites
 
 1. GitHub account with this repo pushed up

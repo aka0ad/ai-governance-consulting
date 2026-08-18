@@ -18,7 +18,7 @@ export default function Contact() {
   return (
     <>
       <h1>Get Started</h1>
-      <p>Let's discuss your AI governance challenges and opportunities.</p>
+      <p>Let's discuss your Ai governance challenges and opportunities.</p>
 
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', marginTop: '2rem' }}>
         <div>
@@ -68,7 +68,7 @@ export default function Contact() {
                 type="text"
                 id="role"
                 name="role"
-                placeholder="e.g., Chief AI Officer, VP Product"
+                placeholder="e.g., Chief Ai Officer, VP Product"
                 required
               />
             </div>
@@ -87,12 +87,12 @@ export default function Contact() {
             </div>
 
             <div>
-              <label htmlFor="challenge">What's your biggest AI governance challenge? *</label>
+              <label htmlFor="challenge">What's your biggest Ai governance challenge? *</label>
               <textarea
                 id="challenge"
                 name="challenge"
                 rows={4}
-                placeholder="e.g., We have no AI inventory, we're not ready for EU AI Act, we need risk management..."
+                placeholder="e.g., We have no AI inventory, we're not ready for EU Ai Act, we need risk management..."
                 required
               />
             </div>
@@ -132,7 +132,7 @@ export default function Contact() {
             <li><strong>Typical audit duration:</strong> 2–4 weeks</li>
             <li><strong>Audit cost range:</strong> $15–50K (depends on AI portfolio size)</li>
             <li><strong>We serve:</strong> Enterprise & regulated small businesses</li>
-            <li><strong>Expertise:</strong> NIST AI RMF, ISO 42001, EU AI Act, sector regulations</li>
+            <li><strong>Expertise:</strong> NIST AI RMF, ISO 42001, EU Ai Act, sector regulations</li>
           </ul>
         </div>
       </div>
