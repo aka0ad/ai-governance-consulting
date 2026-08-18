@@ -1,0 +1,16 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background (optional - remove if you want transparent) -->
+  <rect width="200" height="200" fill="none"/>
+
+  <!-- "aI" text in monospace -->
+  <text
+    x="100"
+    y="130"
+    font-family="'SF Mono', 'Monaco', monospace"
+    font-size="120"
+    font-weight="600"
+    text-anchor="middle"
+    fill="#000000"
+    letter-spacing="-2"
+  >aI</text>
+</svg>
