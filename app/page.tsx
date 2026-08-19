@@ -10,7 +10,7 @@ export default function Home() {
       <section>
         <h2>The Problem</h2>
         <p>
-          You have a Claude Ai team account and want to maximize it across your organization. But you're unsure how to set it up securely,
+          You have a Claude Ai team account and want to maximize it across your organisation. But you're unsure how to set it up securely,
           integrate it into workflows, configure governance, ensure compliance, and scale it across teams.
         </p>
         <p>

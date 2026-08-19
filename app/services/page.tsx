@@ -11,7 +11,7 @@ export default function Services() {
           <li>Set up Claude Ai team account from scratch with proper governance structure</li>
           <li>Configure SSO integration (Okta, Azure AD, etc.) for your org</li>
           <li>Design user roles, permissions, and access controls</li>
-          <li>Set up workspace organization and team structure</li>
+          <li>Set up workspace organisation and team structure</li>
           <li>Establish initial security baseline and audit logging</li>
           <li>Create onboarding materials for your teams</li>
         </ul>
@@ -96,7 +96,7 @@ export default function Services() {
           <li>Quarterly business reviews and optimization recommendations</li>
         </ul>
         <h3>Outcome</h3>
-        <p>Your Claude Ai deployment stays current, secure, and optimized. You have expert support as you scale.</p>
+        <p>Your Claude Ai deployment stays current, secure, and optimised. You have expert support as you scale.</p>
       </section>
 
       <section style={{ marginTop: '3rem' }}>

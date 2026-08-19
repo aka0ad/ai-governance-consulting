@@ -4,7 +4,7 @@ import Navbar from './navbar';
 
 export const metadata: Metadata = {
   title: 'Claude Ai Team Implementation | Ai System Architecture for Enterprise',
-  description: 'Enterprise Claude Ai team account setup, integration, and scaling. Security, compliance, and architecture for organizations deploying Claude Ai at scale.',
+  description: 'Enterprise Claude Ai team account setup, integration, and scaling. Security, compliance, and architecture for organisations deploying Claude Ai at scale.',
   icons: { icon: '/favicon.svg' },
 };
 

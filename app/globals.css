@@ -115,7 +115,7 @@ p {
   padding: 4rem 1rem;
   border-radius: 8px;
   margin-bottom: 3rem;
-  text-align: center;
+  text-align: centre;
 }
 
 .hero h1 {
@@ -250,7 +250,7 @@ footer {
   color: white;
   padding: 2rem 1rem;
   margin-top: 3rem;
-  text-align: center;
+  text-align: centre;
 }
 
 .footer-container {
