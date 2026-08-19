@@ -17,7 +17,10 @@ export default function RootLayout({
       <body>
         <nav className="navbar">
           <div className="nav-container">
-            <a href="/" className="logo">Ai Governance</a>
+            <a href="/" className="logo">
+              <img src="/favicon.svg" alt="Ai logo" className="logo-icon" />
+              <span className="logo-text">less A and more I</span>
+            </a>
             <ul className="nav-links">
               <li><a href="/">Home</a></li>
               <li><a href="/services">Services</a></li>
