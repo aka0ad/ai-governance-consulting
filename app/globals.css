@@ -281,6 +281,10 @@ footer p {
   transition: all 0.3s ease;
 }
 
+.menu-toggle:hover span {
+  background-color: white;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   h1 {
