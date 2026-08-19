@@ -2,8 +2,8 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Claude Team Implementation | Ai System Architecture for Enterprise',
-  description: 'Enterprise Claude team account setup, integration, and scaling. Security, compliance, and architecture for organizations deploying Claude at scale.',
+  title: 'Claude Ai Team Implementation | Ai System Architecture for Enterprise',
+  description: 'Enterprise Claude Ai team account setup, integration, and scaling. Security, compliance, and architecture for organizations deploying Claude Ai at scale.',
   icons: { icon: '/favicon.svg' },
 };
 

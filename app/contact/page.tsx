@@ -18,7 +18,7 @@ export default function Contact() {
   return (
     <>
       <h1>Get Started</h1>
-      <p>Let's discuss your Claude team account strategy and Ai system configuration needs.</p>
+      <p>Let's discuss your Claude Ai team account strategy and Ai system configuration needs.</p>
 
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', marginTop: '2rem' }}>
         <div>
@@ -89,12 +89,12 @@ export default function Contact() {
             </div>
 
             <div>
-              <label htmlFor="challenge">What's your Claude team account need? *</label>
+              <label htmlFor="challenge">What's your Claude Ai team account need? *</label>
               <textarea
                 id="challenge"
                 name="challenge"
                 rows={4}
-                placeholder="e.g., We have a Claude team account and need help setting it up, integrating with our systems, scaling across teams, or ensuring compliance..."
+                placeholder="e.g., We have a Claude Ai team account and need help setting it up, integrating with our systems, scaling across teams, or ensuring compliance..."
                 required
               />
             </div>
@@ -117,13 +117,13 @@ export default function Contact() {
           <h2>What Happens Next</h2>
           <div style={{ backgroundColor: '#f5f5f5', padding: '1.5rem', borderRadius: '8px', marginTop: '1rem' }}>
             <h3 style={{ marginTop: 0 }}>Step 1: Intro Call (30 min)</h3>
-            <p>We'll discuss your org, Claude team account status, and specific needs. No pressure, just conversation.</p>
+            <p>We'll discuss your org, Claude Ai team account status, and specific needs. No pressure, just conversation.</p>
 
             <h3>Step 2: Proposal</h3>
             <p>Based on the call, we'll outline an approach and timeline. You'll get a clear scope and cost estimate.</p>
 
             <h3>Step 3: Implementation</h3>
-            <p>We work embedded with your team to design, build, and deploy Claude at scale for your org.</p>
+            <p>We work embedded with your team to design, build, and deploy Claude Ai at scale for your org.</p>
 
             <h3>Step 4: Handoff & Support</h3>
             <p>Your team takes over. We offer ongoing retainer support for scaling, optimization, and new team onboarding.</p>
@@ -134,7 +134,7 @@ export default function Contact() {
             <li><strong>Typical project duration:</strong> 2-8 weeks depending on scope</li>
             <li><strong>Cost range:</strong> $15K-80K+ per engagement (depends on complexity)</li>
             <li><strong>We serve:</strong> Enterprises, regulated orgs, and growing teams</li>
-            <li><strong>Expertise:</strong> Claude architecture, security, compliance, integration</li>
+            <li><strong>Expertise:</strong> Claude Ai architecture, security, compliance, integration</li>
           </ul>
         </div>
       </div>
