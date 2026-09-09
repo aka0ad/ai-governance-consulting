@@ -26,6 +26,7 @@ export default function Navbar() {
           <li><a href="/services" onClick={() => setMenuOpen(false)}>Services</a></li>
           <li><a href="/blog" onClick={() => setMenuOpen(false)}>Insights</a></li>
           <li><a href="/contact" onClick={() => setMenuOpen(false)}>Contact</a></li>
+          <li><a href="/questionnaire" onClick={() => setMenuOpen(false)} style={{ fontSize: '12px', opacity: 0.6 }}>🧪 Profiling Test</a></li>
         </ul>
       </div>
     </nav>
