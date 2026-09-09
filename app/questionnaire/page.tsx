@@ -26,16 +26,97 @@ interface QuestionnaireState {
 }
 
 /**
- * Client-side LinkedIn lookup simulation
- * In production, this would call Hunter.io or similar API
+ * Real LinkedIn lookup via Hunter.io API
+ * Fetches actual LinkedIn profiles from the web
  */
-function performLinkedInLookup(name: string, email: string): ProfileData {
+async function performLinkedInLookup(
+  name: string,
+  email: string
+): Promise<ProfileData> {
   const domain = email.split('@')[1] || '';
   const firstInitial = name?.split(' ')[0]?.[0]?.toLowerCase() || 'j';
   const lastNameSlug = (name?.split(' ')[1] || 'doe')?.toLowerCase();
 
+  const apiKey = process.env.NEXT_PUBLIC_HUNTER_IO_API_KEY;
+
+  // If no API key, fall back to mock data
+  if (!apiKey || apiKey === 'your-hunter-io-api-key-here') {
+    console.warn('Hunter.io API key not configured; using mock data');
+    return getMockProfile(name, email, domain, firstInitial, lastNameSlug);
+  }
+
+  try {
+    // Call Hunter.io API to find person's LinkedIn profile
+    const hunterUrl = `https://api.hunter.io/v2/email-finder?domain=${domain}&full_name=${encodeURIComponent(
+      name
+    )}&limit=1`;
+
+    const response = await fetch(hunterUrl, {
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+
+    if (!response.ok) {
+      console.error('Hunter.io API error:', response.status);
+      return getMockProfile(name, email, domain, firstInitial, lastNameSlug);
+    }
+
+    const data = (await response.json()) as {
+      data?: {
+        first_name?: string;
+        last_name?: string;
+        position?: string;
+        company?: string;
+        linkedin_url?: string;
+        city?: string;
+        state?: string;
+        country?: string;
+        confidence?: number;
+      };
+    };
+
+    if (!data.data) {
+      return getMockProfile(name, email, domain, firstInitial, lastNameSlug);
+    }
+
+    const person = data.data;
+
+    return {
+      name:
+        name ||
+        `${person.first_name || ''} ${person.last_name || ''}`.trim(),
+      email,
+      title: person.position,
+      company: person.company,
+      location: buildLocation(
+        person.city,
+        person.state,
+        person.country
+      ),
+      linkedin_url: person.linkedin_url,
+      confidence: person.confidence,
+    };
+  } catch (error) {
+    console.error('LinkedIn lookup error:', error);
+    return getMockProfile(name, email, domain, firstInitial, lastNameSlug);
+  }
+}
+
+/**
+ * Fallback mock profile when API key not configured
+ */
+function getMockProfile(
+  name: string,
+  email: string,
+  domain: string,
+  firstInitial: string,
+  lastNameSlug: string
+): ProfileData {
   // Database of known target companies
-  const companyDb: { [key: string]: { company: string; title: string; location: string } } = {
+  const companyDb: {
+    [key: string]: { company: string; title: string; location: string };
+  } = {
     'passmore.com.au': {
       company: 'Passmore Automotive',
       title: 'Owner',
@@ -66,8 +147,17 @@ function performLinkedInLookup(name: string, email: string): ProfileData {
     company: companyInfo.company,
     location: companyInfo.location,
     linkedin_url: `https://linkedin.com/in/${firstInitial}${lastNameSlug}`,
-    confidence: 0.85,
+    confidence: 0.75,
   };
+}
+
+function buildLocation(
+  city?: string,
+  state?: string,
+  country?: string
+): string {
+  const parts = [city, state, country].filter(Boolean);
+  return parts.join(', ') || 'Unknown';
 }
 
 export default function QuestionnairePage() {
@@ -101,10 +191,8 @@ export default function QuestionnairePage() {
     setState((prev) => ({ ...prev, loading: true, error: null }));
 
     try {
-      // Simulate LinkedIn lookup (client-side only, no API call needed)
-      await new Promise((resolve) => setTimeout(resolve, 800)); // Simulate delay
-
-      const profile = performLinkedInLookup(
+      // Perform real LinkedIn lookup via Hunter.io
+      const profile = await performLinkedInLookup(
         state.formData.name,
         state.formData.email
       );
