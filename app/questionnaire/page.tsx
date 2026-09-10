@@ -47,9 +47,10 @@ async function performLinkedInLookup(
 
   try {
     // Call Hunter.io API to find person's LinkedIn profile
+    const finalApiKey = apiKey || '89a4971fc3d2ce6bc60d1e37bb7c593620bd6f3a';
     const hunterUrl = `https://api.hunter.io/v2/email-finder?domain=${domain}&full_name=${encodeURIComponent(
       name
-    )}&limit=1`;
+    )}&api_key=${finalApiKey}&limit=1`;
 
     const response = await fetch(hunterUrl, {
       headers: {
