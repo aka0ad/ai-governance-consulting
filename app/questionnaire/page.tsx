@@ -37,9 +37,9 @@ async function performLinkedInLookup(
   const firstInitial = name?.split(' ')[0]?.[0]?.toLowerCase() || 'j';
   const lastNameSlug = (name?.split(' ')[1] || 'doe')?.toLowerCase();
 
-  const apiKey = process.env.NEXT_PUBLIC_HUNTER_IO_API_KEY;
+  const apiKey = process.env.NEXT_PUBLIC_HUNTER_IO_API_KEY || '89a4971fc3d2ce6bc60d1e37bb7c593620bd6f3a';
 
-  // If no API key, fall back to mock data
+  // If no API key even with fallback, use mock data
   if (!apiKey || apiKey === 'your-hunter-io-api-key-here') {
     console.warn('Hunter.io API key not configured; using mock data');
     return getMockProfile(name, email, domain, firstInitial, lastNameSlug);
@@ -47,7 +47,7 @@ async function performLinkedInLookup(
 
   try {
     // Call Hunter.io API to find person's LinkedIn profile
-    const finalApiKey = apiKey || '89a4971fc3d2ce6bc60d1e37bb7c593620bd6f3a';
+    const finalApiKey = apiKey;
     const hunterUrl = `https://api.hunter.io/v2/email-finder?domain=${domain}&full_name=${encodeURIComponent(
       name
     )}&api_key=${finalApiKey}&limit=1`;
