@@ -52,11 +52,7 @@ async function performLinkedInLookup(
       name
     )}&api_key=${finalApiKey}&limit=1`;
 
-    const response = await fetch(hunterUrl, {
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
+    const response = await fetch(hunterUrl);
 
     if (!response.ok) {
       console.error('Hunter.io API error:', response.status);
