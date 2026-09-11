@@ -37,7 +37,7 @@ async function performLinkedInLookup(
   const firstInitial = name?.split(' ')[0]?.[0]?.toLowerCase() || 'j';
   const lastNameSlug = (name?.split(' ')[1] || 'doe')?.toLowerCase();
 
-  const apiKey = process.env.NEXT_PUBLIC_HUNTER_IO_API_KEY || '89a4971fc3d2ce6bc60d1e37bb7c593620bd6f3a';
+  const apiKey = process.env.NEXT_PUBLIC_HUNTER_IO_API_KEY;
 
   // If no API key even with fallback, use mock data
   if (!apiKey || apiKey === 'your-hunter-io-api-key-here') {
