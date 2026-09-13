@@ -156,18 +156,34 @@ export default function ScrollytellingApproach() {
 
     const observer = new IntersectionObserver(
       (entries) => {
+        // Find which panel is most visible (closest to center of viewport)
+        let mostVisibleIndex = 0;
+        let maxVisibility = 0;
+
         entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const index = panelsRef.current.indexOf(entry.target as HTMLDivElement);
-            if (index !== -1) {
-              setActiveIndex(index);
-            }
+          const index = panelsRef.current.indexOf(entry.target as HTMLDivElement);
+          if (index === -1) return;
+
+          // Calculate how centered the panel is
+          const rect = entry.boundingClientRect;
+          const viewportCenter = window.innerHeight / 2;
+          const panelCenter = rect.top + rect.height / 2;
+          const distanceFromCenter = Math.abs(panelCenter - viewportCenter);
+          const visibility = 1 - (distanceFromCenter / (window.innerHeight / 2));
+
+          if (visibility > maxVisibility) {
+            maxVisibility = visibility;
+            mostVisibleIndex = index;
           }
         });
+
+        if (maxVisibility > 0.1) {
+          setActiveIndex(mostVisibleIndex);
+        }
       },
       {
-        threshold: 0.5,
-        rootMargin: '0px 0px -50% 0px',
+        threshold: [0, 0.25, 0.5, 0.75, 1],
+        rootMargin: '0px',
       }
     );
 
