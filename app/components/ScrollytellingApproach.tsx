@@ -6,19 +6,19 @@ const features = [
   {
     id: 'deep-expertise',
     title: 'Deep Ai Expertise',
-    description: 'We've designed and deployed Ai across regulated enterprises, fintech firms, healthcare providers, and government agencies. We know what works, what doesn't, and how to explain it to your board.',
+    description: "We've designed and deployed Ai across regulated enterprises, fintech firms, healthcare providers, and government agencies. We know what works, what doesn't, and how to explain it to your board.",
     illustration: 'expertise',
   },
   {
     id: 'embedded-partnership',
     title: 'Embedded Partnership Model',
-    description: 'We don't parachute in with a 200-page report. We work embedded with your teams—designing architecture, building systems, and training your people so you own the result.',
+    description: "We don't parachute in with a 200-page report. We work embedded with your teams—designing architecture, building systems, and training your people so you own the result.",
     illustration: 'partnership',
   },
   {
     id: 'security-compliance',
     title: 'Born from Compliance and Security',
-    description: 'Governance isn't bolted on at the end. We design security, compliance, and audit trails into the foundation. Your deployment is audit-ready from day one.',
+    description: "Governance isn't bolted on at the end. We design security, compliance, and audit trails into the foundation. Your deployment is audit-ready from day one.",
     illustration: 'security',
   },
   {
