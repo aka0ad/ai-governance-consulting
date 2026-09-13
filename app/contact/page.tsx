@@ -17,10 +17,11 @@ export default function Contact() {
 
   return (
     <>
-      <h1>Get Started</h1>
-      <p>Let's discuss your Claude Ai team account strategy and Ai system configuration needs.</p>
+      <div style={{ maxWidth: '1200px', margin: '0 auto', paddingLeft: '2rem', paddingRight: '2rem' }}>
+        <h1>Get Started</h1>
+        <p>Let's discuss your Claude Ai team account strategy and Ai system configuration needs.</p>
 
-      <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', marginTop: '2rem' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem', marginTop: '2rem' }}>
         <div>
           <h2>Schedule a Consultation</h2>
           <p>
@@ -137,6 +138,7 @@ export default function Contact() {
             <li><strong>We serve:</strong> Enterprises, regulated orgs, and growing teams</li>
             <li><strong>Expertise:</strong> Claude Ai architecture, security, compliance, integration</li>
           </ul>
+        </div>
         </div>
       </div>
     </>

@@ -128,18 +128,21 @@ main {
 section {
   margin: 0;
   padding: 4rem 2rem;
+}
+
+section:not(.why-section):not(.approach-section):not(.hero) {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-section > * {
+section:not(.why-section):not(.approach-section):not(.hero) > * {
   width: 100%;
   max-width: 1200px;
 }
 
-section > h1,
-section > h2 {
+section:not(.why-section):not(.approach-section):not(.hero) > h1,
+section:not(.why-section):not(.approach-section):not(.hero) > h2 {
   text-align: center;
 }
 
