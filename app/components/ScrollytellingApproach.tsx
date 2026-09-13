@@ -136,171 +136,20 @@ const IllustrationPanel = ({ type }: { type: string }) => {
 };
 
 export default function ScrollytellingApproach() {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const [isDesktop, setIsDesktop] = useState(false);
-  const panelsRef = useRef<(HTMLDivElement | null)[]>([]);
-
-  useEffect(() => {
-    const checkDesktop = () => {
-      const isLargeEnough = window.innerWidth >= 1024 && window.innerHeight >= 740;
-      setIsDesktop(isLargeEnough);
-    };
-
-    checkDesktop();
-    window.addEventListener('resize', checkDesktop);
-    return () => window.removeEventListener('resize', checkDesktop);
-  }, []);
-
-  useEffect(() => {
-    if (!isDesktop) return;
-
-    const observer = new IntersectionObserver(
-      (entries) => {
-        // Find which panel is most visible (closest to center of viewport)
-        let mostVisibleIndex = 0;
-        let maxVisibility = 0;
-
-        entries.forEach((entry) => {
-          const index = panelsRef.current.indexOf(entry.target as HTMLDivElement);
-          if (index === -1) return;
-
-          // Calculate how centered the panel is
-          const rect = entry.boundingClientRect;
-          const viewportCenter = window.innerHeight / 2;
-          const panelCenter = rect.top + rect.height / 2;
-          const distanceFromCenter = Math.abs(panelCenter - viewportCenter);
-          const visibility = 1 - (distanceFromCenter / (window.innerHeight / 2));
-
-          if (visibility > maxVisibility) {
-            maxVisibility = visibility;
-            mostVisibleIndex = index;
-          }
-        });
-
-        if (maxVisibility > 0.1) {
-          setActiveIndex(mostVisibleIndex);
-        }
-      },
-      {
-        threshold: [0, 0.25, 0.5, 0.75, 1],
-        rootMargin: '0px',
-      }
-    );
-
-    panelsRef.current.forEach((panel) => {
-      if (panel) observer.observe(panel);
-    });
-
-    return () => observer.disconnect();
-  }, [isDesktop]);
-
-  const scrollToPanel = (index: number) => {
-    setActiveIndex(index);
-    const panel = panelsRef.current[index];
-    if (panel) {
-      panel.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    }
-  };
-
-  if (!isDesktop) {
-    // Mobile: simple stacked layout
-    return (
-      <section className="bg-[#0a0a0a] py-16 px-4">
-        <div className="max-w-[1200px] mx-auto">
-          <h2 className="text-3xl font-800 text-white mb-3">How We Approach Ai Implementation</h2>
-          <p className="text-sm text-[#aaa] mb-8 leading-relaxed">
-            We're not consultants who hand off a report. We're implementation partners who work inside your organization to build systems that stick.
-          </p>
-
-          {features.map((feature) => (
-            <div key={feature.id} className="mb-10">
-              <h3 className="text-base font-700 text-white mb-2">{feature.title}</h3>
-              <p className="text-xs text-[#999] mb-4 leading-relaxed">{feature.description}</p>
-              <div className="aspect-square rounded-xl overflow-hidden border border-pink-500/20 bg-white/3">
-                <IllustrationPanel type={feature.illustration} />
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-    );
-  }
-
-  // Desktop: scrollytelling layout
   return (
-    <section className="bg-[#0a0a0a] py-0 px-0">
-      <div className="flex gap-0 min-h-screen">
-        {/* Left sticky column */}
-        <div className="w-1/2 sticky top-0 h-screen flex flex-col justify-center px-8 py-20 bg-[#0a0a0a]">
-          <div className="max-h-[580px] overflow-hidden">
-            <h2 className="text-3xl font-800 text-white mb-4">How We Approach Ai Implementation</h2>
-            <p className="text-sm text-[#aaa] mb-8 leading-relaxed">
-              We're not consultants who hand off a report. We're implementation partners who work inside your organization to build systems that stick.
-            </p>
+    <section>
+      <h2>How We Approach Ai Implementation</h2>
+      <p>We're not consultants who hand off a report. We're implementation partners who work inside your organization to build systems that stick.</p>
 
-            {/* Accordion */}
-            <div className="space-y-0 border-t border-gray-800">
-              {features.map((feature, index) => (
-                <div key={feature.id} className={`border-b border-gray-800 transition-all duration-300 ${
-                  activeIndex === index ? 'bg-gray-900/50' : ''
-                }`}>
-                  <button
-                    onClick={() => scrollToPanel(index)}
-                    className="w-full py-4 px-0 text-left transition-colors duration-200 hover:text-white"
-                    aria-expanded={activeIndex === index}
-                  >
-                    <h3 className={`text-base font-700 transition-all duration-300 ${
-                      activeIndex === index
-                        ? 'text-white text-lg'
-                        : 'text-gray-500 hover:text-gray-300'
-                    }`}>
-                      {feature.title}
-                    </h3>
-                  </button>
-                  {activeIndex === index && (
-                    <div className="pb-4 px-0 text-xs text-gray-400 leading-relaxed border-t border-gray-800 pt-4 animate-fadeInUp">
-                      {feature.description}
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
+      {features.map((feature) => (
+        <div key={feature.id}>
+          <h3>{feature.title}</h3>
+          <p>{feature.description}</p>
+          <div>
+            <IllustrationPanel type={feature.illustration} />
           </div>
         </div>
-
-        {/* Right scrolling column */}
-        <div className="w-1/2">
-          {features.map((feature, index) => (
-            <div
-              key={feature.id}
-              ref={(el) => {
-                panelsRef.current[index] = el;
-              }}
-              className="relative min-h-screen flex items-center justify-center p-8"
-            >
-              <div className="w-full max-w-[450px] aspect-square rounded-2xl overflow-hidden border border-pink-500/20 bg-white/3">
-                <IllustrationPanel type={feature.illustration} />
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      <style>{`
-        @keyframes fadeInUp {
-          from {
-            opacity: 0;
-            transform: translateY(8px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-        .animate-fadeInUp {
-          animation: fadeInUp 0.3s ease-out forwards;
-        }
-      `}</style>
+      ))}
     </section>
   );
 }
