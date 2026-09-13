@@ -685,11 +685,15 @@ footer p {
 
   .why-section,
   .approach-section {
-    padding: 3rem 1rem !important;
+    padding: 3rem 0 !important;
   }
 
   .why-governance-section {
-    padding: 4rem 1rem !important;
+    padding: 4rem 0 !important;
+  }
+
+  section {
+    padding: 4rem 0 !important;
   }
 
   .why-governance-header {
