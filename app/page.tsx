@@ -2,9 +2,11 @@ export default function Home() {
   return (
     <>
       <section className="hero">
-        <h1>Claude Ai Team Account Configuration & Implementation</h1>
-        <p>Enterprise Ai system setup, security architecture, and scaling for teams using Claude Ai.</p>
-        <a href="/contact" className="cta-button">Get Started</a>
+        <div className="hero-box">
+          <h1>Claude Ai Governance, Security & Enterprise Implementation</h1>
+          <p>Set up, secure, and scale Claude Ai across your organization with governance frameworks, compliance mapping, and data protection built in.</p>
+          <a href="/contact" className="cta-button">Get Started</a>
+        </div>
       </section>
 
       <section>

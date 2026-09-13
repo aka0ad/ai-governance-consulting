@@ -168,14 +168,16 @@ p {
 /* Hero section */
 .hero {
   background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 50%, var(--accent) 100%);
-  color: white;
   padding: 6rem 2rem;
-  border-radius: 24px;
   margin-bottom: 4rem;
   text-align: center;
   position: relative;
   overflow: hidden;
-  box-shadow: 0 30px 80px rgba(139, 92, 246, 0.25), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 600px;
 }
 
 .hero::before {
@@ -185,7 +187,7 @@ p {
   right: -15%;
   width: 500px;
   height: 500px;
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.08);
   border-radius: 50%;
   animation: float 6s ease-in-out infinite;
 }
@@ -197,7 +199,7 @@ p {
   left: -10%;
   width: 400px;
   height: 400px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.06);
   border-radius: 50%;
   animation: float 8s ease-in-out infinite;
 }
@@ -207,24 +209,35 @@ p {
   50% { transform: translateY(20px); }
 }
 
-.hero h1 {
-  margin-top: 0;
-  font-size: 3.5rem;
-  margin-bottom: 1rem;
-  color: white;
+.hero-box {
+  background: white;
+  border-radius: 20px;
+  padding: 3.5rem;
+  max-width: 700px;
   position: relative;
   z-index: 1;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.15);
+}
+
+.hero h1 {
+  margin-top: 0;
+  font-size: 2.8rem;
+  margin-bottom: 1.25rem;
+  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--secondary-dark) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   font-weight: 800;
   letter-spacing: -1px;
+  line-height: 1.2;
 }
 
 .hero p {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
   margin-bottom: 2.5rem;
-  color: rgba(255, 255, 255, 0.95);
-  position: relative;
-  z-index: 1;
+  color: var(--text-light);
   font-weight: 500;
+  line-height: 1.7;
 }
 
 .cta-button {
