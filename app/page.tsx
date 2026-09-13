@@ -5,8 +5,8 @@ export default function Home() {
     <>
       <section className="hero">
         <div className="hero-box">
-          <h1>Claude Ai Governance, Security & Enterprise Implementation</h1>
-          <p>Set up, secure, and scale Claude Ai across your organization with governance frameworks, compliance mapping, and data protection built in.</p>
+          <h1>Ai Governance, Security & Enterprise Implementation</h1>
+          <p>Set up, secure, and scale large language models (LLMs) across your organization with governance frameworks, compliance mapping, and data protection built in.</p>
           <a href="/contact" className="cta-button">Get Started</a>
         </div>
       </section>
@@ -15,8 +15,8 @@ export default function Home() {
         <h2>What We Do</h2>
         <div className="services-grid">
           <div className="service-card">
-            <h3>Claude Ai Team Setup & Onboarding</h3>
-            <p>Configure Claude Ai team accounts from the ground up. SSO integration, user management, workspace setup, security baseline.</p>
+            <h3>Ai Team Setup & Onboarding</h3>
+            <p>Configure LLM team accounts from the ground up. SSO integration, user management, workspace setup, security baseline.</p>
           </div>
 
           <div className="service-card">
@@ -25,18 +25,18 @@ export default function Home() {
           </div>
 
           <div className="service-card">
-            <h3>Claude Ai Governance & Compliance</h3>
-            <p>Map Claude Ai usage to regulatory requirements (EU Ai Act, GDPR, sector rules). Build governance policies and audit trails.</p>
+            <h3>Ai Governance & Compliance</h3>
+            <p>Map LLM usage to regulatory requirements (EU Ai Act, GDPR, sector rules). Build governance policies and audit trails.</p>
           </div>
 
           <div className="service-card">
             <h3>Workflow Integration & Automation</h3>
-            <p>Embed Claude Ai into your existing systems (APIs, dashboards, data pipelines). Custom integrations and automation setup.</p>
+            <p>Embed LLMs into your existing systems (APIs, dashboards, data pipelines). Custom integrations and automation setup.</p>
           </div>
 
           <div className="service-card">
             <h3>Security & Access Control</h3>
-            <p>Implement role-based access, data isolation, audit logging, and security hardening for Claude Ai deployments.</p>
+            <p>Implement role-based access, data isolation, audit logging, and security hardening for Ai deployments.</p>
           </div>
 
           <div className="service-card">
@@ -49,8 +49,8 @@ export default function Home() {
       <section className="why-governance-section">
         <div className="why-governance-container">
           <div className="why-governance-header">
-            <h2>Why Claude Ai Governance Matters</h2>
-            <p>Enterprise teams deploying Claude Ai face a critical choice: build secure, compliant systems from day one, or fix governance gaps later (at 10x the cost).</p>
+            <h2>Why Ai Governance Matters</h2>
+            <p>Enterprise teams deploying LLMs face a critical choice: build secure, compliant systems from day one, or fix governance gaps later (at 10x the cost).</p>
           </div>
 
           <div className="why-governance-blocks">
@@ -80,7 +80,7 @@ export default function Home() {
 
             <div className="governance-block">
               <h3>Scale requires architecture</h3>
-              <p>Ad-hoc Claude Ai usage across teams creates chaos. A foundation lets you scale confidently.</p>
+              <p>Ad-hoc Ai usage across teams creates chaos. A foundation lets you scale confidently.</p>
               <div className="block-illustration">
                 <svg viewBox="0 0 300 250" preserveAspectRatio="xMidYMid meet">
                   <defs>
@@ -105,7 +105,7 @@ export default function Home() {
 
             <div className="governance-block">
               <h3>Your team needs guidance</h3>
-              <p>Onboarding Claude Ai requires training and governance. We do that work so you don't have to.</p>
+              <p>Onboarding Ai requires training and governance. We do that work so you don't have to.</p>
               <div className="block-illustration">
                 <svg viewBox="0 0 300 250" preserveAspectRatio="xMidYMid meet">
                   <defs>
@@ -138,7 +138,7 @@ export default function Home() {
 
       <section style={{ textAlign: 'center' }}>
         <h2>Ready to bring your Ai to life?</h2>
-        <p>Let's talk about your Claude Ai team account strategy.</p>
+        <p>Let's talk about your Ai team account strategy.</p>
         <a href="/contact" className="cta-button">Schedule a Consultation</a>
       </section>
     </>

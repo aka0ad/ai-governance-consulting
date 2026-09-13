@@ -5,8 +5,8 @@ import { useState, useEffect, useRef } from 'react';
 const features = [
   {
     id: 'deep-expertise',
-    title: 'Deep Claude Ai Expertise',
-    description: 'We've designed and deployed Claude Ai across regulated enterprises, fintech firms, healthcare providers, and government agencies. We know what works, what doesn't, and how to explain it to your board.',
+    title: 'Deep Ai Expertise',
+    description: 'We've designed and deployed Ai across regulated enterprises, fintech firms, healthcare providers, and government agencies. We know what works, what doesn't, and how to explain it to your board.',
     illustration: 'expertise',
   },
   {
@@ -207,7 +207,7 @@ export default function ScrollytellingApproach() {
     return (
       <section className="bg-[#0a0a0a] py-16 px-4">
         <div className="max-w-1200px mx-auto">
-          <h2 className="text-4xl font-800 text-white mb-4">How We Approach Claude Ai Implementation</h2>
+          <h2 className="text-4xl font-800 text-white mb-4">How We Approach Ai Implementation</h2>
           <p className="text-base text-[#aaa] mb-12 max-w-[600px]">
             We're not consultants who hand off a report. We're implementation partners who work inside your organization to build systems that stick.
           </p>
@@ -233,7 +233,7 @@ export default function ScrollytellingApproach() {
         {/* Left sticky column */}
         <div className="w-1/2 sticky top-0 h-screen flex flex-col justify-center px-8 py-20 bg-[#0a0a0a]">
           <div className="max-h-[580px] overflow-hidden">
-            <h2 className="text-4xl font-800 text-white mb-6">How We Approach Claude Ai Implementation</h2>
+            <h2 className="text-4xl font-800 text-white mb-6">How We Approach Ai Implementation</h2>
             <p className="text-base text-[#aaa] mb-10 leading-relaxed">
               We're not consultants who hand off a report. We're implementation partners who work inside your organization to build systems that stick.
             </p>

@@ -6,8 +6,8 @@ export default function Services() {
       <section style={{ marginBottom: '3rem' }}>
         <h2>How Ai Systems Work</h2>
         <p style={{ marginBottom: '2rem', color: '#64748b' }}>
-          A secure Claude Ai implementation flows through multiple layers: your data sources,
-          our architecture, Claude Ai, and back to your systems—with governance and security at every step.
+          A secure LLM implementation flows through multiple layers: your data sources,
+          our architecture, Ai models, and back to your systems—with governance and security at every step.
         </p>
         <svg viewBox="0 0 1000 300" style={{ width: '100%', maxWidth: '900px', margin: '0 auto', display: 'block' }}>
           <defs>
@@ -40,9 +40,9 @@ export default function Services() {
           <path d="M 300 150 L 340 150" stroke="#06b6d4" strokeWidth="3" fill="none" markerEnd="url(#arrowhead)" />
           <text x="320" y="145" textAnchor="middle" fontSize="11" fill="#06b6d4" fontWeight="500">Encrypted</text>
 
-          {/* Claude Ai */}
+          {/* Ai */}
           <rect x="340" y="100" width="120" height="100" rx="8" fill="url(#grad1)" opacity="0.3" stroke="url(#grad1)" strokeWidth="2" />
-          <text x="400" y="155" textAnchor="middle" fontSize="14" fontWeight="600" fill="#1e293b">Claude Ai</text>
+          <text x="400" y="155" textAnchor="middle" fontSize="14" fontWeight="600" fill="#1e293b">Ai</text>
           <text x="400" y="175" textAnchor="middle" fontSize="12" fill="#64748b">(Processing)</text>
 
           {/* Arrow 3 */}
@@ -79,10 +79,10 @@ export default function Services() {
       </section>
 
       <section>
-        <h2>Claude Ai Team Setup & Onboarding</h2>
+        <h2>Ai Team Setup & Onboarding</h2>
         <h3>What We Do</h3>
         <ul style={{ marginLeft: '2rem' }}>
-          <li>Set up Claude Ai team account from scratch with proper governance structure</li>
+          <li>Set up Ai team account from scratch with proper governance structure</li>
           <li>Configure SSO integration (Okta, Azure AD, etc.) for your org</li>
           <li>Design user roles, permissions, and access controls</li>
           <li>Set up workspace organisation and team structure</li>
@@ -90,7 +90,7 @@ export default function Services() {
           <li>Create onboarding materials for your teams</li>
         </ul>
         <h3>Outcome</h3>
-        <p>A fully configured Claude Ai team account ready for deployment. Your team knows how to access it, use it, and follow your governance.</p>
+        <p>A fully configured Ai team account ready for deployment. Your team knows how to access it, use it, and follow your governance.</p>
       </section>
 
       <section>
@@ -98,7 +98,7 @@ export default function Services() {
         <h3>What We Do</h3>
         <ul style={{ marginLeft: '2rem' }}>
           <li>Map your business workflows and identify Ai integration points</li>
-          <li>Design secure data pipelines between your systems and Claude Ai</li>
+          <li>Design secure data pipelines between your systems and Ai</li>
           <li>Plan API integration, custom endpoints, and automation workflows</li>
           <li>Define data handling, retention, and security practices</li>
           <li>Map to compliance requirements (GDPR, Ai Act, sector rules)</li>
@@ -114,14 +114,14 @@ export default function Services() {
         <ul style={{ marginLeft: '2rem' }}>
           <li>Classify your data and identify sensitive information (PII, business-critical, regulated)</li>
           <li>Design encryption strategies for data at rest and in transit</li>
-          <li>Implement data minimization practices for Claude Ai workflows</li>
-          <li>Map data flows through Claude Ai against GDPR, CCPA, and sector regulations</li>
-          <li>Assess Claude Ai's security posture and vendor controls against your requirements</li>
+          <li>Implement data minimization practices for Ai workflows</li>
+          <li>Map data flows through Ai against GDPR, CCPA, and sector regulations</li>
+          <li>Assess Ai's security posture and vendor controls against your requirements</li>
           <li>Document data handling procedures and justify data residency decisions</li>
           <li>Build data subject rights procedures (access, deletion, portability)</li>
         </ul>
         <h3>Outcome</h3>
-        <p>A documented data protection framework proving your Claude Ai implementation safeguards customer and business data. Defensible in audits and regulatory reviews.</p>
+        <p>A documented data protection framework proving your Ai implementation safeguards customer and business data. Defensible in audits and regulatory reviews.</p>
 
         <h3 style={{ marginTop: '2.5rem' }}>Data Protection Layers</h3>
         <svg viewBox="0 0 800 400" style={{ width: '100%', maxWidth: '700px', margin: '1.5rem auto', display: 'block' }}>
@@ -167,7 +167,7 @@ export default function Services() {
       </section>
 
       <section>
-        <h2>Claude Ai Governance & Compliance</h2>
+        <h2>Ai Governance & Compliance</h2>
 
         <svg viewBox="0 0 900 250" style={{ width: '100%', maxWidth: '800px', margin: '1.5rem auto', display: 'block' }}>
           <defs>
@@ -185,9 +185,9 @@ export default function Services() {
             </linearGradient>
           </defs>
 
-          {/* Your Claude Ai Deployment */}
+          {/* Your Ai Deployment */}
           <rect x="350" y="20" width="200" height="50" rx="8" fill="url(#gov1)" opacity="0.2" stroke="url(#gov1)" strokeWidth="2" />
-          <text x="450" y="50" textAnchor="middle" fontSize="13" fontWeight="600" fill="#1e293b">Claude Ai Deployment</text>
+          <text x="450" y="50" textAnchor="middle" fontSize="13" fontWeight="600" fill="#1e293b">Ai Deployment</text>
 
           {/* Arrows down */}
           <path d="M 450 70 L 450 95" stroke="#94a3b8" strokeWidth="2" fill="none" markerEnd="url(#arrowhead2)" />
@@ -231,52 +231,52 @@ export default function Services() {
         </svg>
         <h3>What We Do</h3>
         <ul style={{ marginLeft: '2rem' }}>
-          <li>Audit current Claude Ai usage and identify compliance gaps</li>
-          <li>Map Claude Ai deployments to EU Ai Act, GDPR, and sector regulations</li>
+          <li>Audit current Ai usage and identify compliance gaps</li>
+          <li>Map Ai deployments to EU Ai Act, GDPR, and sector regulations</li>
           <li>Build governance policies (acceptable use, data handling, audit requirements)</li>
-          <li>Set up audit logging and monitoring for Claude Ai usage</li>
+          <li>Set up audit logging and monitoring for Ai usage</li>
           <li>Document compliance approach for regulators and auditors</li>
           <li>Create incident response procedures for Ai-related issues</li>
         </ul>
         <h3>Outcome</h3>
-        <p>Documented governance framework proving Claude Ai usage is compliant and auditable. Ready for regulatory review.</p>
+        <p>Documented governance framework proving Ai usage is compliant and auditable. Ready for regulatory review.</p>
       </section>
 
       <section>
         <h2>Workflow Integration & Automation</h2>
         <h3>What We Do</h3>
         <ul style={{ marginLeft: '2rem' }}>
-          <li>Design and implement API integrations between Claude Ai and your systems</li>
-          <li>Build custom workflows and automation using Claude Ai (through API or UI)</li>
+          <li>Design and implement API integrations between Ai and your systems</li>
+          <li>Build custom workflows and automation using Ai (through API or UI)</li>
           <li>Set up data pipelines for document processing, analysis, summarization</li>
-          <li>Create dashboards and monitoring for Claude Ai usage metrics</li>
+          <li>Create dashboards and monitoring for Ai usage metrics</li>
           <li>Document workflows and create runbooks for your teams</li>
           <li>Test and validate integrations end-to-end</li>
         </ul>
         <h3>Outcome</h3>
-        <p>Claude Ai embedded into your workflows and systems. Your teams have working integrations and documentation.</p>
+        <p>Ai embedded into your workflows and systems. Your teams have working integrations and documentation.</p>
       </section>
 
       <section>
         <h2>Security & Access Control</h2>
         <h3>What We Do</h3>
         <ul style={{ marginLeft: '2rem' }}>
-          <li>Implement role-based access control (RBAC) for Claude Ai team account</li>
+          <li>Implement role-based access control (RBAC) for Ai team account</li>
           <li>Set up data isolation between teams/projects</li>
-          <li>Configure audit logging for all Claude Ai usage</li>
+          <li>Configure audit logging for all Ai usage</li>
           <li>Harden security baseline (password policies, 2FA, IP restrictions)</li>
           <li>Establish data residency and retention policies</li>
           <li>Create security runbooks and incident response procedures</li>
         </ul>
         <h3>Outcome</h3>
-        <p>A hardened Claude Ai deployment with auditable security controls. Compliant with enterprise security standards.</p>
+        <p>A hardened Ai deployment with auditable security controls. Compliant with enterprise security standards.</p>
       </section>
 
       <section>
         <h2>Ongoing Implementation Support</h2>
         <h3>What We Do</h3>
         <ul style={{ marginLeft: '2rem' }}>
-          <li>Ongoing support for Claude Ai team account management and optimization</li>
+          <li>Ongoing support for Ai team account management and optimization</li>
           <li>New team member onboarding and access provisioning</li>
           <li>Troubleshooting integration issues and performance problems</li>
           <li>Monthly scaling assessments as your usage grows</li>
@@ -284,7 +284,7 @@ export default function Services() {
           <li>Quarterly business reviews and optimization recommendations</li>
         </ul>
         <h3>Outcome</h3>
-        <p>Your Claude Ai deployment stays current, secure, and optimised. You have expert support as you scale.</p>
+        <p>Your Ai deployment stays current, secure, and optimised. You have expert support as you scale.</p>
       </section>
 
       <section style={{ marginTop: '3rem' }}>
@@ -293,7 +293,7 @@ export default function Services() {
           Each engagement is scoped and priced based on your org's size, integration complexity, and regulatory environment.
         </p>
         <p>
-          <strong>Let's talk about your Claude Ai strategy.</strong> <a href="/contact">Schedule a consultation.</a>
+          <strong>Let's talk about your Ai strategy.</strong> <a href="/contact">Schedule a consultation.</a>
         </p>
       </section>
     </>
