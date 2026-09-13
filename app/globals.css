@@ -468,6 +468,101 @@ footer p {
   background: linear-gradient(135deg, var(--primary), var(--secondary));
 }
 
+/* Why Governance Section (Dark) */
+.why-governance-section {
+  background: #0a0a0a;
+  padding: 6rem 2rem !important;
+  margin: 0;
+}
+
+.why-governance-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.why-governance-header {
+  margin-bottom: 5rem;
+  text-align: center;
+}
+
+.why-governance-header h2 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: white;
+  margin: 0 0 1rem 0;
+  letter-spacing: -1px;
+}
+
+.why-governance-header p {
+  font-size: 1rem;
+  color: #aaa;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.why-governance-blocks {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 5rem 2rem;
+}
+
+.governance-block {
+  display: flex;
+  flex-direction: column;
+}
+
+.governance-block h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 0.75rem 0;
+  line-height: 1.3;
+}
+
+.governance-block p {
+  font-size: 0.95rem;
+  color: #999;
+  margin: 0 0 2rem 0;
+  line-height: 1.6;
+}
+
+.block-illustration {
+  width: 100%;
+  aspect-ratio: 1.2;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(236, 72, 153, 0.2);
+  border-radius: 16px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  animation: fadeInUp 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+.governance-block:nth-child(1) .block-illustration { animation-delay: 0.1s; }
+.governance-block:nth-child(2) .block-illustration { animation-delay: 0.2s; }
+.governance-block:nth-child(3) .block-illustration { animation-delay: 0.3s; }
+.governance-block:nth-child(4) .block-illustration { animation-delay: 0.4s; }
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.block-illustration svg {
+  width: 100%;
+  height: 100%;
+}
+
 /* Why section & Approach section */
 .why-section,
 .approach-section {
@@ -591,6 +686,22 @@ footer p {
   .why-section,
   .approach-section {
     padding: 3rem 1rem !important;
+  }
+
+  .why-governance-section {
+    padding: 4rem 1rem !important;
+  }
+
+  .why-governance-header {
+    margin-bottom: 3rem;
+  }
+
+  .why-governance-header h2 {
+    font-size: 2.2rem;
+  }
+
+  .why-governance-blocks {
+    gap: 3rem 1rem;
   }
 
   .reasons-grid {
