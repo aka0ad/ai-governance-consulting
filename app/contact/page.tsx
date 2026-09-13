@@ -111,7 +111,7 @@ export default function Contact() {
               </select>
             </div>
 
-            <button type="submit">Schedule Consultation</button>
+            <button type="submit" className="cta-button">Schedule Consultation</button>
           </form>
         </div>
 
