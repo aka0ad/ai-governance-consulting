@@ -276,9 +276,9 @@ export default function ScrollytellingApproach() {
               ref={(el) => {
                 panelsRef.current[index] = el;
               }}
-              className="relative h-screen flex items-center justify-center p-8"
+              className="relative min-h-screen flex items-center justify-center p-8"
             >
-              <div className="w-full h-full rounded-3xl overflow-hidden border border-pink-500/20 bg-white/3">
+              <div className="w-full max-w-[450px] aspect-square rounded-2xl overflow-hidden border border-pink-500/20 bg-white/3">
                 <IllustrationPanel type={feature.illustration} />
               </div>
             </div>
