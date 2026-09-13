@@ -17,7 +17,7 @@ const features = [
   },
   {
     id: 'security-compliance',
-    title: 'Security & Compliance First',
+    title: 'Born from Compliance and Security',
     description: 'Governance isn't bolted on at the end. We design security, compliance, and audit trails into the foundation. Your deployment is audit-ready from day one.',
     illustration: 'security',
   },
