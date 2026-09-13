@@ -43,11 +43,12 @@ export default function Contact() {
             </div>
 
             <div>
-              <label htmlFor="email">Email *</label>
+              <label htmlFor="email">Work Email *</label>
               <input
                 type="email"
                 id="email"
                 name="email"
+                placeholder="your.name@company.com"
                 required
               />
             </div>

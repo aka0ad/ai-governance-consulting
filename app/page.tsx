@@ -221,8 +221,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section style={{ textAlign: 'center', margin: '3rem 0' }}>
-        <h2>Ready to Deploy Claude Ai at Scale?</h2>
+      <section style={{ textAlign: 'center' }}>
+        <h2>Ready to bring your Ai to life?</h2>
         <p>Let's talk about your Claude Ai team account strategy.</p>
         <a href="/contact" className="cta-button">Schedule a Consultation</a>
       </section>
