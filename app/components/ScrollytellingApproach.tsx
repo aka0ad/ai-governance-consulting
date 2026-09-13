@@ -29,6 +29,9 @@ const features = [
   },
 ];
 
+const sectionHeading = 'How We Approach Ai Implementation';
+const sectionIntro = "We're not consultants who hand off a report. We're implementation partners who work inside your organization to build systems that stick.";
+
 const IllustrationPanel = ({ type }: { type: string }) => {
   const gradientId = `grad-${type}`;
 
@@ -136,20 +139,221 @@ const IllustrationPanel = ({ type }: { type: string }) => {
 };
 
 export default function ScrollytellingApproach() {
-  return (
-    <section>
-      <h2>How We Approach Ai Implementation</h2>
-      <p>We're not consultants who hand off a report. We're implementation partners who work inside your organization to build systems that stick.</p>
+  const [activeIndex, setActiveIndex] = useState(0);
+  const [isDesktop, setIsDesktop] = useState(false);
+  const panelsRef = useRef<(HTMLDivElement | null)[]>([]);
 
-      {features.map((feature) => (
-        <div key={feature.id}>
-          <h3>{feature.title}</h3>
-          <p>{feature.description}</p>
-          <div>
-            <IllustrationPanel type={feature.illustration} />
+  // Check if viewport meets desktop threshold (≥1024px width AND ≥740px height)
+  useEffect(() => {
+    const checkDesktop = () => {
+      setIsDesktop(window.innerWidth >= 1024 && window.innerHeight >= 740);
+    };
+
+    checkDesktop();
+    window.addEventListener('resize', checkDesktop);
+    return () => window.removeEventListener('resize', checkDesktop);
+  }, []);
+
+  // IntersectionObserver for scroll-spy on right column panels
+  useEffect(() => {
+    if (!isDesktop) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        let mostVisibleIndex = 0;
+        let maxVisibility = 0;
+
+        entries.forEach((entry) => {
+          const index = panelsRef.current.indexOf(entry.target as HTMLDivElement);
+          if (index === -1) return;
+
+          const rect = entry.boundingClientRect;
+          const viewportCenter = window.innerHeight / 2;
+          const panelCenter = rect.top + rect.height / 2;
+          const distanceFromCenter = Math.abs(panelCenter - viewportCenter);
+          const visibility = 1 - (distanceFromCenter / (window.innerHeight / 2));
+
+          if (visibility > maxVisibility) {
+            maxVisibility = visibility;
+            mostVisibleIndex = index;
+          }
+        });
+
+        if (maxVisibility > 0.1) {
+          setActiveIndex(mostVisibleIndex);
+        }
+      },
+      { threshold: [0, 0.25, 0.5, 0.75, 1] }
+    );
+
+    panelsRef.current.forEach((panel) => {
+      if (panel) observer.observe(panel);
+    });
+
+    return () => observer.disconnect();
+  }, [isDesktop]);
+
+  // Scroll to panel when accordion item clicked
+  const scrollToPanel = (index: number) => {
+    const panel = panelsRef.current[index];
+    if (panel) {
+      panel.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  };
+
+  // Mobile layout: simple stacked
+  if (!isDesktop) {
+    return (
+      <section style={{ background: '#0a0a0a', padding: '4rem 2rem', margin: 0 }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+          <h2 style={{ fontSize: '2rem', fontWeight: 800, color: 'white', marginBottom: '1rem' }}>
+            {sectionHeading}
+          </h2>
+          <p style={{ fontSize: '0.875rem', color: '#aaa', marginBottom: '2rem', lineHeight: 1.6 }}>
+            {sectionIntro}
+          </p>
+
+          {features.map((feature) => (
+            <div key={feature.id} style={{ marginBottom: '2.5rem' }}>
+              <h3 style={{ fontSize: '1rem', fontWeight: 700, color: 'white', marginBottom: '0.5rem' }}>
+                {feature.title}
+              </h3>
+              <p style={{ fontSize: '0.75rem', color: '#999', marginBottom: '1rem', lineHeight: 1.6 }}>
+                {feature.description}
+              </p>
+              <div style={{ borderRadius: '0.75rem', overflow: 'hidden', border: '1px solid rgba(236, 72, 153, 0.2)', background: 'rgba(255, 255, 255, 0.03)', aspectRatio: '1 / 1' }}>
+                <IllustrationPanel type={feature.illustration} />
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+    );
+  }
+
+  // Desktop layout: sticky left + scrolling right
+  return (
+    <section style={{ background: '#0a0a0a', padding: 0, margin: 0, minHeight: '100vh' }}>
+      <div style={{ display: 'flex', gap: 0 }}>
+        {/* Left sticky column */}
+        <div
+          style={{
+            width: '50%',
+            position: 'sticky',
+            top: 0,
+            height: '100vh',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            padding: '2rem',
+            background: '#0a0a0a',
+            overflow: 'hidden',
+          }}
+        >
+          <div style={{ maxHeight: '580px', overflow: 'hidden' }}>
+            <h2 style={{ fontSize: '1.875rem', fontWeight: 800, color: 'white', marginBottom: '1rem' }}>
+              {sectionHeading}
+            </h2>
+            <p style={{ fontSize: '0.875rem', color: '#aaa', marginBottom: '2rem', lineHeight: 1.6 }}>
+              {sectionIntro}
+            </p>
+
+            {/* Accordion */}
+            <div style={{ borderTop: '1px solid #1f2937' }}>
+              {features.map((feature, index) => (
+                <div key={feature.id} style={{ borderBottom: '1px solid #1f2937' }}>
+                  <button
+                    onClick={() => scrollToPanel(index)}
+                    aria-expanded={activeIndex === index}
+                    style={{
+                      width: '100%',
+                      padding: '1rem 0',
+                      background: activeIndex === index ? 'rgba(31, 41, 55, 0.3)' : 'transparent',
+                      border: 'none',
+                      textAlign: 'left',
+                      cursor: 'pointer',
+                      transition: 'all 0.2s ease',
+                    }}
+                  >
+                    <h3
+                      style={{
+                        fontSize: '1rem',
+                        fontWeight: 700,
+                        color: activeIndex === index ? 'white' : '#6b7280',
+                        transition: 'all 0.3s ease',
+                        margin: 0,
+                      }}
+                    >
+                      {feature.title}
+                    </h3>
+                  </button>
+
+                  {activeIndex === index && (
+                    <div
+                      style={{
+                        padding: '1rem 0',
+                        borderTop: '1px solid #1f2937',
+                        fontSize: '0.75rem',
+                        color: '#9ca3af',
+                        lineHeight: 1.6,
+                        animation: 'fadeInUp 0.3s ease-out',
+                      }}
+                    >
+                      {feature.description}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
-      ))}
+
+        {/* Right scrolling column */}
+        <div style={{ width: '50%' }}>
+          {features.map((feature, index) => (
+            <div
+              key={feature.id}
+              ref={(el) => {
+                panelsRef.current[index] = el;
+              }}
+              style={{
+                minHeight: '100vh',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                padding: '2rem',
+              }}
+            >
+              <div
+                style={{
+                  borderRadius: '1rem',
+                  overflow: 'hidden',
+                  border: '1px solid rgba(236, 72, 153, 0.2)',
+                  background: 'rgba(255, 255, 255, 0.03)',
+                  width: '100%',
+                  maxWidth: '450px',
+                  aspectRatio: '1 / 1',
+                }}
+              >
+                <IllustrationPanel type={feature.illustration} />
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <style>{`
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translateY(8px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+      `}</style>
     </section>
   );
 }
