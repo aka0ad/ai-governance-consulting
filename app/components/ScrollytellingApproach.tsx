@@ -204,24 +204,24 @@ export default function ScrollytellingApproach() {
   // Mobile layout: simple stacked
   if (!isDesktop) {
     return (
-      <section style={{ background: '#0a0a0a', padding: '4rem 2rem', margin: 0 }}>
+      <section style={{ background: '#ffffff', padding: '4rem 2rem', margin: 0 }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
-          <h2 style={{ fontSize: '2rem', fontWeight: 800, color: 'white', marginBottom: '1rem' }}>
+          <h2 style={{ fontSize: '2rem', fontWeight: 800, color: '#1f2937', marginBottom: '1rem' }}>
             {sectionHeading}
           </h2>
-          <p style={{ fontSize: '0.875rem', color: '#aaa', marginBottom: '2rem', lineHeight: 1.6 }}>
+          <p style={{ fontSize: '0.875rem', color: '#6b7280', marginBottom: '2rem', lineHeight: 1.6 }}>
             {sectionIntro}
           </p>
 
           {features.map((feature) => (
             <div key={feature.id} style={{ marginBottom: '2.5rem' }}>
-              <h3 style={{ fontSize: '1rem', fontWeight: 700, color: 'white', marginBottom: '0.5rem' }}>
+              <h3 style={{ fontSize: '1rem', fontWeight: 700, color: '#1f2937', marginBottom: '0.5rem' }}>
                 {feature.title}
               </h3>
-              <p style={{ fontSize: '0.75rem', color: '#999', marginBottom: '1rem', lineHeight: 1.6 }}>
+              <p style={{ fontSize: '0.75rem', color: '#6b7280', marginBottom: '1rem', lineHeight: 1.6 }}>
                 {feature.description}
               </p>
-              <div style={{ borderRadius: '0.75rem', overflow: 'hidden', border: '1px solid rgba(236, 72, 153, 0.2)', background: 'rgba(255, 255, 255, 0.03)', aspectRatio: '1 / 1' }}>
+              <div style={{ borderRadius: '0.75rem', overflow: 'hidden', border: '1px solid rgba(236, 72, 153, 0.3)', background: 'rgba(236, 72, 153, 0.05)', aspectRatio: '1 / 1' }}>
                 <IllustrationPanel type={feature.illustration} />
               </div>
             </div>
@@ -233,7 +233,7 @@ export default function ScrollytellingApproach() {
 
   // Desktop layout: sticky left + scrolling right
   return (
-    <section style={{ background: '#0a0a0a', padding: 0, margin: 0, minHeight: '100vh' }}>
+    <section style={{ background: '#ffffff', padding: 0, margin: 0, minHeight: '100vh' }}>
       <div style={{ display: 'flex', gap: 0 }}>
         {/* Left sticky column */}
         <div
@@ -246,29 +246,29 @@ export default function ScrollytellingApproach() {
             flexDirection: 'column',
             justifyContent: 'center',
             padding: '2rem',
-            background: '#0a0a0a',
+            background: '#ffffff',
             overflow: 'hidden',
           }}
         >
           <div style={{ maxHeight: '580px', overflow: 'hidden' }}>
-            <h2 style={{ fontSize: '1.875rem', fontWeight: 800, color: 'white', marginBottom: '1rem' }}>
+            <h2 style={{ fontSize: '1.875rem', fontWeight: 800, color: '#1f2937', marginBottom: '1rem' }}>
               {sectionHeading}
             </h2>
-            <p style={{ fontSize: '0.875rem', color: '#aaa', marginBottom: '2rem', lineHeight: 1.6 }}>
+            <p style={{ fontSize: '0.875rem', color: '#6b7280', marginBottom: '2rem', lineHeight: 1.6 }}>
               {sectionIntro}
             </p>
 
             {/* Accordion */}
-            <div style={{ borderTop: '1px solid #1f2937' }}>
+            <div style={{ borderTop: '1px solid #e5e7eb' }}>
               {features.map((feature, index) => (
-                <div key={feature.id} style={{ borderBottom: '1px solid #1f2937' }}>
+                <div key={feature.id} style={{ borderBottom: '1px solid #e5e7eb' }}>
                   <button
                     onClick={() => scrollToPanel(index)}
                     aria-expanded={activeIndex === index}
                     style={{
                       width: '100%',
                       padding: '1rem 0',
-                      background: activeIndex === index ? 'rgba(31, 41, 55, 0.3)' : 'transparent',
+                      background: activeIndex === index ? 'rgba(236, 72, 153, 0.05)' : 'transparent',
                       border: 'none',
                       textAlign: 'left',
                       cursor: 'pointer',
@@ -279,7 +279,7 @@ export default function ScrollytellingApproach() {
                       style={{
                         fontSize: '1rem',
                         fontWeight: 700,
-                        color: activeIndex === index ? 'white' : '#6b7280',
+                        color: activeIndex === index ? '#ec4899' : '#9ca3af',
                         transition: 'all 0.3s ease',
                         margin: 0,
                       }}
@@ -292,9 +292,9 @@ export default function ScrollytellingApproach() {
                     <div
                       style={{
                         padding: '1rem 0',
-                        borderTop: '1px solid #1f2937',
+                        borderTop: '1px solid #e5e7eb',
                         fontSize: '0.75rem',
-                        color: '#9ca3af',
+                        color: '#6b7280',
                         lineHeight: 1.6,
                         animation: 'fadeInUp 0.3s ease-out',
                       }}
@@ -328,8 +328,8 @@ export default function ScrollytellingApproach() {
                 style={{
                   borderRadius: '1rem',
                   overflow: 'hidden',
-                  border: '1px solid rgba(236, 72, 153, 0.2)',
-                  background: 'rgba(255, 255, 255, 0.03)',
+                  border: '1px solid rgba(236, 72, 153, 0.3)',
+                  background: 'rgba(236, 72, 153, 0.05)',
                   width: '100%',
                   maxWidth: '450px',
                   aspectRatio: '1 / 1',
