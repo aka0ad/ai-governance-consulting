@@ -53,30 +53,6 @@ export default function Home() {
 
           <div className="why-governance-blocks">
             <div className="governance-block">
-              <h3>Getting it right saves months</h3>
-              <p>Misconfigured Claude Ai deployments waste time and money. Proper setup unlocks value immediately.</p>
-              <div className="block-illustration">
-                <svg viewBox="0 0 300 250" preserveAspectRatio="xMidYMid meet">
-                  <defs>
-                    <linearGradient id="spark-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                      <stop offset="0%" style={{ stopColor: '#ec4899', stopOpacity: 1 }} />
-                      <stop offset="100%" style={{ stopColor: '#8b5cf6', stopOpacity: 1 }} />
-                    </linearGradient>
-                  </defs>
-                  <rect x="20" y="20" width="260" height="210" rx="16" fill="rgba(255,255,255,0.03)" stroke="url(#spark-grad)" strokeWidth="1.5" />
-                  <circle cx="80" cy="80" r="20" fill="none" stroke="url(#spark-grad)" strokeWidth="2" opacity="0.8" />
-                  <circle cx="150" cy="100" r="30" fill="none" stroke="url(#spark-grad)" strokeWidth="2" opacity="0.6" />
-                  <circle cx="220" cy="70" r="25" fill="none" stroke="url(#spark-grad)" strokeWidth="2" opacity="0.7" />
-                  <path d="M 80 80 L 150 100 L 220 70" stroke="url(#spark-grad)" strokeWidth="1.5" fill="none" opacity="0.5" strokeDasharray="4,4" />
-                  <circle cx="80" cy="80" r="4" fill="url(#spark-grad)" />
-                  <circle cx="150" cy="100" r="4" fill="url(#spark-grad)" />
-                  <circle cx="220" cy="70" r="4" fill="url(#spark-grad)" />
-                  <text x="150" y="180" textAnchor="middle" fontSize="11" fill="#aaa" opacity="0.7">Rapid Setup</text>
-                </svg>
-              </div>
-            </div>
-
-            <div className="governance-block">
               <h3>Compliance and security aren't afterthoughts</h3>
               <p>Data handling, audit trails, and regulatory mapping need to be built in from day one.</p>
               <div className="block-illustration">
@@ -159,57 +135,22 @@ export default function Home() {
       <section className="approach-section">
         <div className="section-content reversed">
           <div className="image-block">
-            <svg viewBox="0 0 400 500" style={{ width: '100%', maxWidth: '400px' }}>
+            <svg viewBox="0 0 300 250" style={{ width: '100%', maxWidth: '400px' }} preserveAspectRatio="xMidYMid meet">
               <defs>
-                <linearGradient id="grad-approach" x1="0%" y1="0%" x2="100%" y2="100%">
+                <linearGradient id="network-grad" x1="0%" y1="0%" x2="100%" y2="100%">
                   <stop offset="0%" style={{ stopColor: '#ec4899', stopOpacity: 1 }} />
                   <stop offset="100%" style={{ stopColor: '#8b5cf6', stopOpacity: 1 }} />
                 </linearGradient>
               </defs>
-
-              {/* Background */}
-              <circle cx="200" cy="250" r="180" fill="url(#grad-approach)" opacity="0.1" />
-
-              {/* Process flow */}
-              <g>
-                {/* Step 1 */}
-                <circle cx="100" cy="100" r="35" fill="#ec4899" opacity="0.2" stroke="#ec4899" strokeWidth="2" />
-                <text x="100" y="110" textAnchor="middle" fontSize="24">📐</text>
-                <text x="100" y="150" textAnchor="middle" fontSize="12" fontWeight="700" fill="#be185d">Design</text>
-
-                {/* Arrow 1 */}
-                <path d="M 135 100 L 165 100" stroke="#8b5cf6" strokeWidth="2.5" fill="none" markerEnd="url(#arrowhead-approach)" />
-
-                {/* Step 2 */}
-                <circle cx="200" cy="100" r="35" fill="#8b5cf6" opacity="0.2" stroke="#8b5cf6" strokeWidth="2" />
-                <text x="200" y="110" textAnchor="middle" fontSize="24">🔨</text>
-                <text x="200" y="150" textAnchor="middle" fontSize="12" fontWeight="700" fill="#6d28d9">Build</text>
-
-                {/* Arrow 2 */}
-                <path d="M 235 100 L 265 100" stroke="#8b5cf6" strokeWidth="2.5" fill="none" markerEnd="url(#arrowhead-approach)" />
-
-                {/* Step 3 */}
-                <circle cx="300" cy="100" r="35" fill="#06b6d4" opacity="0.2" stroke="#06b6d4" strokeWidth="2" />
-                <text x="300" y="110" textAnchor="middle" fontSize="24">✋</text>
-                <text x="300" y="150" textAnchor="middle" fontSize="12" fontWeight="700" fill="#0369a1">Hand Off</text>
-
-                {/* Center text */}
-                <rect x="50" y="220" width="300" height="200" rx="12" fill="rgba(139, 92, 246, 0.05)" stroke="rgba(139, 92, 246, 0.2)" strokeWidth="2" />
-                <text x="200" y="260" textAnchor="middle" fontSize="13" fontWeight="700" fill="#1e293b">Embedded Partnership</text>
-                <text x="200" y="285" textAnchor="middle" fontSize="12" fill="#475569">We work inside your teams,</text>
-                <text x="200" y="305" textAnchor="middle" fontSize="12" fill="#475569">not as external contractors.</text>
-                <text x="200" y="330" textAnchor="middle" fontSize="13" fontWeight="700" fill="#1e293b">Enterprise Experience</text>
-                <text x="200" y="355" textAnchor="middle" fontSize="12" fill="#475569">Regulated enterprises, fintech,</text>
-                <text x="200" y="375" textAnchor="middle" fontSize="12" fill="#475569">healthcare, government.</text>
-                <text x="200" y="400" textAnchor="middle" fontSize="13" fontWeight="700" fill="#1e293b">Proven Results</text>
-              </g>
-
-              {/* Arrow marker */}
-              <defs>
-                <marker id="arrowhead-approach" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
-                  <polygon points="0 0, 10 3, 0 6" fill="#8b5cf6" />
-                </marker>
-              </defs>
+              <rect x="20" y="20" width="260" height="210" rx="16" fill="rgba(255,255,255,0.03)" stroke="url(#network-grad)" strokeWidth="1.5" />
+              <circle cx="80" cy="80" r="20" fill="none" stroke="url(#network-grad)" strokeWidth="2" opacity="0.8" />
+              <circle cx="150" cy="100" r="30" fill="none" stroke="url(#network-grad)" strokeWidth="2" opacity="0.6" />
+              <circle cx="220" cy="70" r="25" fill="none" stroke="url(#network-grad)" strokeWidth="2" opacity="0.7" />
+              <path d="M 80 80 L 150 100 L 220 70" stroke="url(#network-grad)" strokeWidth="1.5" fill="none" opacity="0.5" strokeDasharray="4,4" />
+              <circle cx="80" cy="80" r="4" fill="url(#network-grad)" />
+              <circle cx="150" cy="100" r="4" fill="url(#network-grad)" />
+              <circle cx="220" cy="70" r="4" fill="url(#network-grad)" />
+              <text x="150" y="180" textAnchor="middle" fontSize="11" fill="#aaa" opacity="0.7">Connected Systems</text>
             </svg>
           </div>
 
