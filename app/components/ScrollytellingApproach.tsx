@@ -34,7 +34,7 @@ const IllustrationPanel = ({ type }: { type: string }) => {
 
   const illustrations: Record<string, React.ReactNode> = {
     expertise: (
-      <svg viewBox="0 0 300 300" className="w-full h-full">
+      <svg viewBox="0 0 300 300" style={{ width: '300px', height: '300px' }}>
         <defs>
           <linearGradient id={gradientId} x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" style={{ stopColor: '#8b5cf6', stopOpacity: 1 }} />
@@ -57,7 +57,7 @@ const IllustrationPanel = ({ type }: { type: string }) => {
       </svg>
     ),
     partnership: (
-      <svg viewBox="0 0 300 300" className="w-full h-full">
+      <svg viewBox="0 0 300 300" style={{ width: '300px', height: '300px' }}>
         <defs>
           <linearGradient id={gradientId} x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" style={{ stopColor: '#ec4899', stopOpacity: 1 }} />
@@ -87,7 +87,7 @@ const IllustrationPanel = ({ type }: { type: string }) => {
       </svg>
     ),
     security: (
-      <svg viewBox="0 0 300 300" className="w-full h-full">
+      <svg viewBox="0 0 300 300" style={{ width: '300px', height: '300px' }}>
         <defs>
           <linearGradient id={gradientId} x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" style={{ stopColor: '#06b6d4', stopOpacity: 1 }} />
@@ -106,7 +106,7 @@ const IllustrationPanel = ({ type }: { type: string }) => {
       </svg>
     ),
     architecture: (
-      <svg viewBox="0 0 300 300" className="w-full h-full">
+      <svg viewBox="0 0 300 300" style={{ width: '300px', height: '300px' }}>
         <defs>
           <linearGradient id={gradientId} x1="0%" y1="0%" x2="100%" y2="100%">
             <stop offset="0%" style={{ stopColor: '#ec4899', stopOpacity: 1 }} />
@@ -132,7 +132,7 @@ const IllustrationPanel = ({ type }: { type: string }) => {
     ),
   };
 
-  return <div className="w-full h-full flex items-center justify-center">{illustrations[type]}</div>;
+  return <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>{illustrations[type]}</div>;
 };
 
 export default function ScrollytellingApproach() {
