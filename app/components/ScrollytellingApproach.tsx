@@ -239,22 +239,26 @@ export default function ScrollytellingApproach() {
             </p>
 
             {/* Accordion */}
-            <div className="space-y-1">
+            <div className="space-y-0 border-t border-gray-800">
               {features.map((feature, index) => (
-                <div key={feature.id} className="border-b border-gray-800">
+                <div key={feature.id} className={`border-b border-gray-800 transition-all duration-300 ${
+                  activeIndex === index ? 'bg-gray-900/50' : ''
+                }`}>
                   <button
                     onClick={() => scrollToPanel(index)}
-                    className="w-full py-4 text-left transition-colors duration-200 hover:text-white"
+                    className="w-full py-4 px-0 text-left transition-colors duration-200 hover:text-white"
                     aria-expanded={activeIndex === index}
                   >
-                    <h3 className={`text-lg font-700 transition-colors duration-200 ${
-                      activeIndex === index ? 'text-white' : 'text-gray-400'
+                    <h3 className={`text-base font-700 transition-all duration-300 ${
+                      activeIndex === index
+                        ? 'text-white text-lg'
+                        : 'text-gray-500 hover:text-gray-300'
                     }`}>
                       {feature.title}
                     </h3>
                   </button>
                   {activeIndex === index && (
-                    <div className="pb-4 text-sm text-[#999] leading-relaxed animate-fadeInUp">
+                    <div className="pb-4 px-0 text-xs text-gray-400 leading-relaxed border-t border-gray-800 pt-4 animate-fadeInUp">
                       {feature.description}
                     </div>
                   )}
