@@ -465,8 +465,138 @@ footer p {
   background: linear-gradient(135deg, var(--primary), var(--secondary));
 }
 
+/* Why section & Approach section */
+.why-section,
+.approach-section {
+  background: linear-gradient(135deg, rgba(249, 250, 251, 1) 0%, rgba(243, 244, 246, 1) 100%);
+  padding: 5rem 2rem !important;
+}
+
+.approach-section {
+  background: linear-gradient(135deg, rgba(243, 244, 246, 1) 0%, rgba(249, 250, 251, 1) 100%);
+}
+
+.section-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-content.reversed {
+  direction: rtl;
+}
+
+.section-content.reversed > * {
+  direction: ltr;
+}
+
+.content-block h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--text);
+}
+
+.content-block p {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  line-height: 1.8;
+}
+
+/* Reasons grid */
+.reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.reason-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.reason-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-4px);
+  border-color: var(--primary);
+}
+
+.reason-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.reason-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+  color: var(--text);
+}
+
+.reason-card p {
+  font-size: 1rem;
+  color: var(--text-light);
+  margin: 0;
+}
+
+/* Approach features */
+.approach-features {
+  display: grid;
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.feature {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.feature:last-child {
+  border-bottom: none;
+}
+
+.feature h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+  color: var(--primary);
+}
+
+.feature p {
+  font-size: 1rem;
+  color: var(--text-light);
+  margin: 0;
+  line-height: 1.7;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
+  .section-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .section-content.reversed {
+    direction: ltr;
+  }
+
+  .why-section,
+  .approach-section {
+    padding: 3rem 1rem !important;
+  }
+
+  .reasons-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .content-block h2 {
+    font-size: 2rem;
+  }
   h1 {
     font-size: 2rem;
   }
