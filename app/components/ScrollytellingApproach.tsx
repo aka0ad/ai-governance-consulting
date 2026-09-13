@@ -205,7 +205,7 @@ export default function ScrollytellingApproach() {
   if (!isDesktop) {
     return (
       <section style={{ background: '#ffffff', padding: '4rem 2rem', margin: 0 }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto', paddingLeft: '3rem' }}>
           <h2 style={{ fontSize: '2rem', fontWeight: 800, color: '#1f2937', marginBottom: '1rem' }}>
             {sectionHeading}
           </h2>
@@ -221,7 +221,7 @@ export default function ScrollytellingApproach() {
               <p style={{ fontSize: '0.75rem', color: '#6b7280', marginBottom: '1rem', lineHeight: 1.6 }}>
                 {feature.description}
               </p>
-              <div style={{ borderRadius: '0.75rem', overflow: 'hidden', border: '1px solid rgba(236, 72, 153, 0.3)', background: 'rgba(236, 72, 153, 0.05)', aspectRatio: '1 / 1' }}>
+              <div style={{ borderRadius: '0.75rem', overflow: 'hidden', border: '1px solid #e5e7eb', background: '#f3f4f6', aspectRatio: '1 / 1' }}>
                 <IllustrationPanel type={feature.illustration} />
               </div>
             </div>
@@ -246,6 +246,7 @@ export default function ScrollytellingApproach() {
             flexDirection: 'column',
             justifyContent: 'center',
             padding: '2rem',
+            paddingLeft: '3rem',
             background: '#ffffff',
             overflow: 'hidden',
           }}
@@ -268,7 +269,7 @@ export default function ScrollytellingApproach() {
                     style={{
                       width: '100%',
                       padding: '1rem 0',
-                      background: activeIndex === index ? 'rgba(236, 72, 153, 0.05)' : 'transparent',
+                      background: activeIndex === index ? '#f3f4f6' : 'transparent',
                       border: 'none',
                       textAlign: 'left',
                       cursor: 'pointer',
@@ -279,7 +280,7 @@ export default function ScrollytellingApproach() {
                       style={{
                         fontSize: '1rem',
                         fontWeight: 700,
-                        color: activeIndex === index ? '#ec4899' : '#9ca3af',
+                        color: activeIndex === index ? '#1f2937' : '#9ca3af',
                         transition: 'all 0.3s ease',
                         margin: 0,
                       }}
@@ -328,8 +329,8 @@ export default function ScrollytellingApproach() {
                 style={{
                   borderRadius: '1rem',
                   overflow: 'hidden',
-                  border: '1px solid rgba(236, 72, 153, 0.3)',
-                  background: 'rgba(236, 72, 153, 0.05)',
+                  border: '1px solid #e5e7eb',
+                  background: '#f3f4f6',
                   width: '100%',
                   maxWidth: '450px',
                   aspectRatio: '1 / 1',
