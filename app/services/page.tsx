@@ -5,7 +5,6 @@ export default function Services() {
 
       <section>
         <h2>Claude Ai Team Setup & Onboarding</h2>
-        <p><strong>Duration:</strong> 2-4 weeks | <strong>Cost:</strong> $15-40K</p>
         <h3>What We Do</h3>
         <ul style={{ marginLeft: '2rem' }}>
           <li>Set up Claude Ai team account from scratch with proper governance structure</li>
@@ -21,7 +20,6 @@ export default function Services() {
 
       <section>
         <h2>Ai System Architecture Design</h2>
-        <p><strong>Duration:</strong> 3-6 weeks | <strong>Cost:</strong> $25-60K</p>
         <h3>What We Do</h3>
         <ul style={{ marginLeft: '2rem' }}>
           <li>Map your business workflows and identify Ai integration points</li>
@@ -36,8 +34,23 @@ export default function Services() {
       </section>
 
       <section>
+        <h2>Data Protection & Privacy</h2>
+        <h3>What We Do</h3>
+        <ul style={{ marginLeft: '2rem' }}>
+          <li>Classify your data and identify sensitive information (PII, business-critical, regulated)</li>
+          <li>Design encryption strategies for data at rest and in transit</li>
+          <li>Implement data minimization practices for Claude Ai workflows</li>
+          <li>Map data flows through Claude Ai against GDPR, CCPA, and sector regulations</li>
+          <li>Assess Claude Ai's security posture and vendor controls against your requirements</li>
+          <li>Document data handling procedures and justify data residency decisions</li>
+          <li>Build data subject rights procedures (access, deletion, portability)</li>
+        </ul>
+        <h3>Outcome</h3>
+        <p>A documented data protection framework proving your Claude Ai implementation safeguards customer and business data. Defensible in audits and regulatory reviews.</p>
+      </section>
+
+      <section>
         <h2>Claude Ai Governance & Compliance</h2>
-        <p><strong>Duration:</strong> 2-4 weeks | <strong>Cost:</strong> $20-50K</p>
         <h3>What We Do</h3>
         <ul style={{ marginLeft: '2rem' }}>
           <li>Audit current Claude Ai usage and identify compliance gaps</li>
@@ -53,7 +66,6 @@ export default function Services() {
 
       <section>
         <h2>Workflow Integration & Automation</h2>
-        <p><strong>Duration:</strong> 4-8 weeks | <strong>Cost:</strong> $30-80K</p>
         <h3>What We Do</h3>
         <ul style={{ marginLeft: '2rem' }}>
           <li>Design and implement API integrations between Claude Ai and your systems</li>
@@ -69,7 +81,6 @@ export default function Services() {
 
       <section>
         <h2>Security & Access Control</h2>
-        <p><strong>Duration:</strong> 2-3 weeks | <strong>Cost:</strong> $15-40K</p>
         <h3>What We Do</h3>
         <ul style={{ marginLeft: '2rem' }}>
           <li>Implement role-based access control (RBAC) for Claude Ai team account</li>
@@ -84,8 +95,7 @@ export default function Services() {
       </section>
 
       <section>
-        <h2>Ongoing Implementation Support (Retainer)</h2>
-        <p><strong>Frequency:</strong> Monthly | <strong>Cost:</strong> $2K-8K/month</p>
+        <h2>Ongoing Implementation Support</h2>
         <h3>What We Do</h3>
         <ul style={{ marginLeft: '2rem' }}>
           <li>Ongoing support for Claude Ai team account management and optimization</li>
@@ -100,13 +110,12 @@ export default function Services() {
       </section>
 
       <section style={{ marginTop: '3rem' }}>
-        <h2>How We Price</h2>
+        <h2>Ready to Get Started?</h2>
         <p>
-          We quote based on scope: the size of your org, complexity of integrations, regulatory requirements, and support level.
-          Most customers start with Claude Ai Team Setup or Ai System Architecture Design, then add integrations and ongoing support as they scale.
+          Each engagement is scoped and priced based on your org's size, integration complexity, and regulatory environment.
         </p>
         <p>
-          <strong>Not sure where to start?</strong> <a href="/contact">Let's talk about your Claude Ai strategy.</a>
+          <strong>Let's talk about your Claude Ai strategy.</strong> <a href="/contact">Schedule a consultation.</a>
         </p>
       </section>
     </>

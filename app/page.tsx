@@ -24,37 +24,31 @@ export default function Home() {
           <div className="service-card">
             <h3>Claude Ai Team Setup & Onboarding</h3>
             <p>Configure Claude Ai team accounts from the ground up. SSO integration, user management, workspace setup, security baseline.</p>
-            <p><strong>Engagement:</strong> $15-40K</p>
           </div>
 
           <div className="service-card">
             <h3>Ai System Architecture Design</h3>
             <p>Design secure, scalable Ai system architecture for your org. Workflow integration, data handling, compliance mapping.</p>
-            <p><strong>Engagement:</strong> $25-60K</p>
           </div>
 
           <div className="service-card">
             <h3>Claude Ai Governance & Compliance</h3>
             <p>Map Claude Ai usage to regulatory requirements (EU Ai Act, GDPR, sector rules). Build governance policies and audit trails.</p>
-            <p><strong>Engagement:</strong> $20-50K</p>
           </div>
 
           <div className="service-card">
             <h3>Workflow Integration & Automation</h3>
             <p>Embed Claude Ai into your existing systems (APIs, dashboards, data pipelines). Custom integrations and automation setup.</p>
-            <p><strong>Engagement:</strong> $30-80K</p>
           </div>
 
           <div className="service-card">
             <h3>Security & Access Control</h3>
             <p>Implement role-based access, data isolation, audit logging, and security hardening for Claude Ai deployments.</p>
-            <p><strong>Engagement:</strong> $15-40K</p>
           </div>
 
           <div className="service-card">
             <h3>Ongoing Implementation Support</h3>
             <p>Monthly retainer for deployment guidance, team onboarding, troubleshooting, and scaling as you grow.</p>
-            <p><strong>Engagement:</strong> $2K-8K/month</p>
           </div>
         </div>
       </section>
