@@ -1,3 +1,5 @@
+import ScrollytellingApproach from './components/ScrollytellingApproach';
+
 export default function Home() {
   return (
     <>
@@ -132,58 +134,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="approach-section">
-        <div className="section-content reversed">
-          <div className="image-block">
-            <svg viewBox="0 0 300 250" style={{ width: '100%', maxWidth: '400px' }} preserveAspectRatio="xMidYMid meet">
-              <defs>
-                <linearGradient id="network-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" style={{ stopColor: '#ec4899', stopOpacity: 1 }} />
-                  <stop offset="100%" style={{ stopColor: '#8b5cf6', stopOpacity: 1 }} />
-                </linearGradient>
-              </defs>
-              <rect x="20" y="20" width="260" height="210" rx="16" fill="rgba(255,255,255,0.03)" stroke="url(#network-grad)" strokeWidth="1.5" />
-              <circle cx="80" cy="80" r="20" fill="none" stroke="url(#network-grad)" strokeWidth="2" opacity="0.8" />
-              <circle cx="150" cy="100" r="30" fill="none" stroke="url(#network-grad)" strokeWidth="2" opacity="0.6" />
-              <circle cx="220" cy="70" r="25" fill="none" stroke="url(#network-grad)" strokeWidth="2" opacity="0.7" />
-              <path d="M 80 80 L 150 100 L 220 70" stroke="url(#network-grad)" strokeWidth="1.5" fill="none" opacity="0.5" strokeDasharray="4,4" />
-              <circle cx="80" cy="80" r="4" fill="url(#network-grad)" />
-              <circle cx="150" cy="100" r="4" fill="url(#network-grad)" />
-              <circle cx="220" cy="70" r="4" fill="url(#network-grad)" />
-              <text x="150" y="180" textAnchor="middle" fontSize="11" fill="#aaa" opacity="0.7">Connected Systems</text>
-            </svg>
-          </div>
-
-          <div className="content-block">
-            <h2>How We Approach Claude Ai Implementation</h2>
-            <p style={{ fontSize: '1.1rem', marginBottom: '2rem', color: '#475569' }}>
-              We're not consultants who hand off a report. We're implementation partners who work inside your organization to build systems that stick.
-            </p>
-
-            <div className="approach-features">
-              <div className="feature">
-                <h3>Deep Claude Ai Expertise</h3>
-                <p>We've designed and deployed Claude Ai across regulated enterprises, fintech firms, healthcare providers, and government agencies. We know what works, what doesn't, and how to explain it to your board.</p>
-              </div>
-
-              <div className="feature">
-                <h3>Embedded Partnership Model</h3>
-                <p>We don't parachute in with a 200-page report. We work embedded with your teams—designing architecture, building systems, and training your people so you own the result.</p>
-              </div>
-
-              <div className="feature">
-                <h3>Security & Compliance First</h3>
-                <p>Governance isn't bolted on at the end. We design security, compliance, and audit trails into the foundation. Your deployment is audit-ready from day one.</p>
-              </div>
-
-              <div className="feature">
-                <h3>Practical, Proven Architecture</h3>
-                <p>No theoretical frameworks. We use battle-tested patterns from real enterprise deployments. Your systems are built to scale, not to impress architects.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      <ScrollytellingApproach />
 
       <section style={{ textAlign: 'center' }}>
         <h2>Ready to bring your Ai to life?</h2>
