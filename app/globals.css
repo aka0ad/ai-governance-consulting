@@ -123,13 +123,24 @@ a:hover {
 /* Main content */
 main {
   min-height: calc(100vh - 200px);
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 4rem 2rem;
 }
 
 section {
-  margin-bottom: 4rem;
+  margin: 0;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section > * {
+  width: 100%;
+  max-width: 1200px;
+}
+
+section > h1,
+section > h2 {
+  text-align: center;
 }
 
 h1, h2, h3 {
@@ -168,12 +179,12 @@ p {
 /* Hero section */
 .hero {
   background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 50%, var(--accent) 100%);
-  padding: 6rem 2rem;
-  margin-bottom: 4rem;
+  padding: 6rem 2rem !important;
+  margin: 0 !important;
   text-align: center;
   position: relative;
   overflow: hidden;
-  border-radius: 24px;
+  border-radius: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -267,7 +278,10 @@ p {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 2.5rem;
-  margin: 3rem 0;
+  margin: 0;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .service-card {
