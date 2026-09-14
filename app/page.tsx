@@ -10,13 +10,13 @@ export default function Home() {
           <p style={{ fontSize: '0.95rem', color: '#666', marginTop: '1.5rem', marginBottom: '1.5rem', lineHeight: 1.6 }}>
             Regardless of which LLM your company uses—we can tame the beast. Whether Claude, GPT, Gemini, Llama, or Copilot, our governance framework works across platforms.
           </p>
-          <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center', marginBottom: '2rem', flexWrap: 'wrap' }}>
+          <div style={{ display: 'flex', gap: '2rem', alignItems: 'center', marginBottom: '2rem', flexWrap: 'wrap' }}>
             <span style={{ fontSize: '0.85rem', color: '#999', fontWeight: 500 }}>Works with:</span>
-            <img src="/llm-logos/claude.svg" alt="Anthropic Claude" style={{ height: '28px' }} />
-            <img src="/llm-logos/openai.svg" alt="OpenAI GPT" style={{ height: '28px' }} />
-            <img src="/llm-logos/google.svg" alt="Google Gemini" style={{ height: '28px' }} />
-            <img src="/llm-logos/meta.svg" alt="Meta Llama" style={{ height: '28px' }} />
-            <img src="/llm-logos/microsoft.svg" alt="Microsoft Copilot" style={{ height: '28px' }} />
+            <img src="/llm-logos/claude.svg" alt="Anthropic Claude" style={{ height: '56px' }} />
+            <img src="/llm-logos/openai.svg" alt="OpenAI GPT" style={{ height: '56px' }} />
+            <img src="/llm-logos/google.svg" alt="Google Gemini" style={{ height: '56px' }} />
+            <img src="/llm-logos/meta.svg" alt="Meta Llama" style={{ height: '56px' }} />
+            <img src="/llm-logos/microsoft.svg" alt="Microsoft Copilot" style={{ height: '56px' }} />
           </div>
           <a href="/contact" className="cta-button">Get Started</a>
         </div>
