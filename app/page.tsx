@@ -7,6 +7,17 @@ export default function Home() {
         <div className="hero-box">
           <h1>Ai Governance, Security & Enterprise Implementation</h1>
           <p>Set up, secure, and scale large language models (LLMs) across your organization with governance frameworks, compliance mapping, and data protection built in.</p>
+          <p style={{ fontSize: '0.95rem', color: '#666', marginTop: '1.5rem', marginBottom: '1.5rem', lineHeight: 1.6 }}>
+            Regardless of which LLM your company uses—we can tame the beast. Whether Claude, GPT, Gemini, Llama, or Copilot, our governance framework works across platforms.
+          </p>
+          <div style={{ display: 'flex', gap: '1.5rem', alignItems: 'center', marginBottom: '2rem', flexWrap: 'wrap' }}>
+            <span style={{ fontSize: '0.85rem', color: '#999', fontWeight: 500 }}>Works with:</span>
+            <img src="/llm-logos/claude.svg" alt="Anthropic Claude" style={{ height: '28px' }} />
+            <img src="/llm-logos/openai.svg" alt="OpenAI GPT" style={{ height: '28px' }} />
+            <img src="/llm-logos/google.svg" alt="Google Gemini" style={{ height: '28px' }} />
+            <img src="/llm-logos/meta.svg" alt="Meta Llama" style={{ height: '28px' }} />
+            <img src="/llm-logos/microsoft.svg" alt="Microsoft Copilot" style={{ height: '28px' }} />
+          </div>
           <a href="/contact" className="cta-button">Get Started</a>
         </div>
       </section>
