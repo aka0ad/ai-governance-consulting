@@ -10,7 +10,7 @@ export default function Navbar() {
       <div className="nav-container">
         <a href="/" className="logo">
           <img src="/favicon.svg" alt="Ai logo" className="logo-icon" />
-          <span className="logo-text">less A and more I</span>
+          <span className="logo-text">Ai System Architecture</span>
         </a>
         <button
           className="menu-toggle"
