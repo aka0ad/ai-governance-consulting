@@ -1,10 +1,8 @@
 <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="claude-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#1f2937;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#374151;stop-opacity:1" />
-    </linearGradient>
-  </defs>
   <rect width="200" height="200" fill="white" rx="20"/>
-  <text x="100" y="130" font-family="Arial, sans-serif" font-size="80" font-weight="bold" fill="url(#claude-grad)" text-anchor="middle">C</text>
+  <g transform="translate(100,100)">
+    <!-- Anthropic's geometric 'A' -->
+    <path d="M -30,-50 L 0,50 L 30,-50 Z" fill="none" stroke="#1f2937" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+    <line x1="-15" y1="0" x2="15" y2="0" stroke="#1f2937" stroke-width="10" stroke-linecap="round"/>
+  </g>
 </svg>

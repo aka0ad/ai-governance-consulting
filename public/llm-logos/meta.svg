@@ -1,4 +1,8 @@
 <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
   <rect width="200" height="200" fill="white" rx="20"/>
-  <text x="100" y="130" font-family="Arial, sans-serif" font-size="85" font-weight="bold" fill="#0A66C2" text-anchor="middle">f</text>
+  <g transform="translate(100,100)">
+    <!-- Meta's distinctive serif 'M' -->
+    <path d="M -45,-45 L -30,35 M -30,-45 L 0,20 L 30,-45 M 30,-45 L 45,35"
+          fill="none" stroke="#0A66C2" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
 </svg>

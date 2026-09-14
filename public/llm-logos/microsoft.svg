@@ -1,9 +1,10 @@
 <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
   <rect width="200" height="200" fill="white" rx="20"/>
-  <g transform="translate(50,50)">
-    <rect x="0" y="0" width="50" height="50" fill="#F25022"/>
-    <rect x="55" y="0" width="50" height="50" fill="#7FBA00"/>
-    <rect x="0" y="55" width="50" height="50" fill="#00A4EF"/>
-    <rect x="55" y="55" width="50" height="50" fill="#FFB900"/>
+  <g transform="translate(40,40)">
+    <!-- Microsoft's official four squares -->
+    <rect x="0" y="0" width="50" height="50" fill="#F25022" rx="3"/>
+    <rect x="62" y="0" width="50" height="50" fill="#7FBA00" rx="3"/>
+    <rect x="0" y="62" width="50" height="50" fill="#00A4EF" rx="3"/>
+    <rect x="62" y="62" width="50" height="50" fill="#FFB900" rx="3"/>
   </g>
 </svg>

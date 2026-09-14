@@ -1,10 +1,10 @@
 <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
   <rect width="200" height="200" fill="white" rx="20"/>
   <g transform="translate(100,100)">
-    <circle cx="-25" cy="-25" r="22" fill="#4285F4"/>
-    <circle cx="25" cy="-25" r="22" fill="#EA4335"/>
-    <circle cx="25" cy="25" r="22" fill="#FBBC04"/>
-    <circle cx="-25" cy="25" r="22" fill="#34A853"/>
-    <circle cx="0" cy="0" r="16" fill="white"/>
+    <!-- Google Gemini star/diamond -->
+    <path d="M 0,-45 L 32,-15 L 32,15 L 0,45 L -32,15 L -32,-15 Z"
+          fill="none" stroke="#4285F4" stroke-width="8" stroke-linejoin="round"/>
+    <path d="M -15,-20 L 15,-20 L 15,20 L -15,20 Z"
+          fill="none" stroke="#EA4335" stroke-width="6" stroke-linejoin="round"/>
   </g>
 </svg>
