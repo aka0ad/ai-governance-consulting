@@ -11,7 +11,7 @@ export default function Home() {
             Regardless of which LLM your company uses—we can tame the beast. Whether Claude, GPT, Gemini, Llama, or Copilot, our governance framework works across platforms.
           </p>
           <div style={{ display: 'flex', gap: '2rem', alignItems: 'center', marginBottom: '2rem', flexWrap: 'wrap' }}>
-            <span style={{ fontSize: '0.85rem', color: '#999', fontWeight: 500 }}>Works with:</span>
+            <span style={{ fontSize: '0.85rem', color: '#999', fontWeight: 500 }}>We work with:</span>
             <img src="/llm-logos/claude.svg" alt="Anthropic Claude" style={{ height: '56px' }} />
             <img src="/llm-logos/openai.svg" alt="OpenAI GPT" style={{ height: '56px' }} />
             <img src="/llm-logos/google.svg" alt="Google Gemini" style={{ height: '56px' }} />
